@@ -37,9 +37,46 @@
   async function init() {
     setupNavigation();
     setupSearch();
-    await loadMovies();
+    await Promise.all([loadMovies(), loadFeaturedGuides()]);
     hideLoadingScreen();
     setupScrollAnimations();
+  }
+
+  // ═══════════════════════════════════════════════
+  // FEATURED GUIDES
+  // ═══════════════════════════════════════════════
+
+  async function loadFeaturedGuides() {
+    try {
+      const response = await fetch('/data/articles.json');
+      if (!response.ok) return; // Silent fail for guides
+      const articles = await response.json();
+      const featured = articles.filter(a => a.featured).slice(0, 3);
+
+      const grid = $('#guidesGrid');
+      if (grid && featured.length > 0) {
+        grid.innerHTML = featured.map(a => `
+          <article class="article-card animate-on-scroll">
+            <a href="/articles/article.html?slug=${a.slug}" aria-label="Read: ${escapeHTML(a.title)}">
+              <div class="article-card-cover">
+                <div class="article-card-cover-placeholder">📰</div>
+                <span class="article-card-badge">${escapeHTML(a.category)}</span>
+              </div>
+              <div class="article-card-body">
+                <h3 class="article-card-title">${escapeHTML(a.title)}</h3>
+                <p class="article-card-excerpt">${escapeHTML(a.excerpt)}</p>
+                <span class="article-card-cta">Read More →</span>
+              </div>
+            </a>
+          </article>
+        `).join('');
+      } else {
+        $('.featured-guides').style.display = 'none';
+      }
+    } catch (error) {
+      console.warn('Error loading guides:', error);
+      $('.featured-guides').style.display = 'none';
+    }
   }
 
   // ═══════════════════════════════════════════════

@@ -109,11 +109,29 @@
             'HBO Max': '💜'
         };
 
-        grid.innerHTML = platforms.map(p => `
-      <button class="btn-platform" aria-label="Watch on ${escapeHTML(p)}">
-        <span>${platformIcons[p] || '📺'}</span> ${escapeHTML(p)}
-      </button>
+        if (platforms.length === 0) {
+            grid.innerHTML = `
+        <a href="#" class="affiliate-btn btn-check-availability" rel="nofollow sponsored" target="_blank">
+          <span>🔎</span> Check Availability
+        </a>
+      `;
+            return;
+        }
+
+        const buttonsHtml = platforms.map(p => `
+      <a href="#" class="affiliate-btn" data-platform="${escapeHTML(p)}" rel="nofollow sponsored" target="_blank">
+        <span>${platformIcons[p] || '📺'}</span> Watch on ${escapeHTML(p)}
+      </a>
     `).join('');
+
+        // Always add a generic fallback/check more options button
+        const fallbackHtml = `
+      <a href="#" class="affiliate-btn btn-check-availability" rel="nofollow sponsored" target="_blank">
+        <span>🔎</span> Check More Options
+      </a>
+    `;
+
+        grid.innerHTML = buttonsHtml + fallbackHtml;
     }
 
     // ═══════════════════════════════════════════════

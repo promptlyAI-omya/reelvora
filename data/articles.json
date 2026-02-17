@@ -1,0 +1,138 @@
+[
+    {
+        "title": "Top 10 Sci-Fi Movies You Must Watch in 2026",
+        "slug": "top-10-sci-fi-movies-2026",
+        "excerpt": "Discover the most mind-bending science fiction films releasing this year. From AI thrillers to space epics, here are our top picks.",
+        "date": "2026-02-15",
+        "category": "Lists",
+        "readTime": "8 min read",
+        "coverImage": "/assets/images/articles/placeholder-cover.webp",
+        "featured": true,
+        "sections": [
+            {
+                "heading": "The Rise of AI-Driven Storylines",
+                "content": "[Placeholder: Write 100–150 words about how AI themes are dominating sci-fi in 2026.]"
+            },
+            {
+                "heading": "Space Exploration Epics Making a Comeback",
+                "content": "[Placeholder: Write 100–150 words about the resurgence of space exploration narratives.]"
+            },
+            {
+                "heading": "Indie Sci-Fi Gems to Watch",
+                "content": "[Placeholder: Write 100–150 words about lesser-known sci-fi films worth watching.]"
+            }
+        ],
+        "faq": [
+            {
+                "question": "What is the best sci-fi movie of 2026?",
+                "answer": "[Placeholder: Add your recommended title and brief reasoning here.]"
+            },
+            {
+                "question": "Where can I stream sci-fi movies?",
+                "answer": "[Placeholder: List 2–3 OTT platforms and explain availability.]"
+            }
+        ]
+    },
+    {
+        "title": "How to Choose the Best OTT Platform for Movies",
+        "slug": "best-ott-platform-for-movies",
+        "excerpt": "Netflix, Amazon Prime, Disney+ — which streaming service offers the best value for movie lovers? We break it down.",
+        "date": "2026-02-10",
+        "category": "Guides",
+        "readTime": "6 min read",
+        "coverImage": "/assets/images/articles/placeholder-cover.webp",
+        "featured": true,
+        "sections": [
+            {
+                "heading": "Comparing Content Libraries",
+                "content": "[Placeholder: Write 100–150 words comparing the movie catalogs of major OTT platforms.]"
+            },
+            {
+                "heading": "Pricing and Plans Breakdown",
+                "content": "[Placeholder: Write 100–150 words comparing subscription costs and features.]"
+            },
+            {
+                "heading": "Which Platform Suits You Best?",
+                "content": "[Placeholder: Write 100–150 words with a recommendation framework based on preferences.]"
+            }
+        ],
+        "faq": [
+            {
+                "question": "Which OTT platform has the most movies?",
+                "answer": "[Placeholder: Provide a factual comparison.]"
+            },
+            {
+                "question": "Can I use multiple OTT platforms?",
+                "answer": "[Placeholder: Explain bundling options and tips.]"
+            }
+        ]
+    },
+    {
+        "title": "The Ultimate Guide to Movie Ratings Explained",
+        "slug": "movie-ratings-explained",
+        "excerpt": "IMDb, Rotten Tomatoes, Metacritic — what do these ratings actually mean? Learn how to read movie scores like a pro.",
+        "date": "2026-02-05",
+        "category": "Guides",
+        "readTime": "5 min read",
+        "coverImage": "/assets/images/articles/placeholder-cover.webp",
+        "featured": true,
+        "sections": [
+            {
+                "heading": "Understanding IMDb Ratings",
+                "content": "[Placeholder: Write 100–150 words explaining how IMDb ratings work.]"
+            },
+            {
+                "heading": "Rotten Tomatoes: Critics vs Audience",
+                "content": "[Placeholder: Write 100–150 words about the Tomatometer and audience score difference.]"
+            },
+            {
+                "heading": "How to Use Ratings to Pick Movies",
+                "content": "[Placeholder: Write 100–150 words with practical tips on using ratings effectively.]"
+            }
+        ],
+        "faq": [
+            {
+                "question": "Is IMDb rating reliable?",
+                "answer": "[Placeholder: Discuss reliability and potential biases.]"
+            },
+            {
+                "question": "What is a good Rotten Tomatoes score?",
+                "answer": "[Placeholder: Explain the scoring thresholds.]"
+            }
+        ]
+    },
+    {
+        "title": "Best Horror Movies to Watch This Weekend",
+        "slug": "best-horror-movies-weekend",
+        "excerpt": "Looking for a scare? Here are the most terrifying horror films you can stream right now on your favorite platforms.",
+        "date": "2026-01-28",
+        "category": "Lists",
+        "readTime": "7 min read",
+        "coverImage": "/assets/images/articles/placeholder-cover.webp",
+        "featured": false,
+        "sections": [
+            {
+                "heading": "Classic Horror That Still Terrifies",
+                "content": "[Placeholder: Write 100–150 words about timeless horror films.]"
+            },
+            {
+                "heading": "Modern Horror Masterpieces",
+                "content": "[Placeholder: Write 100–150 words about recent standout horror movies.]"
+            },
+            {
+                "heading": "Hidden Horror Gems on Streaming",
+                "content": "[Placeholder: Write 100–150 words about underrated horror films on OTT platforms.]"
+            }
+        ],
+        "faq": [
+            {
+                "question": "What is the scariest movie on Netflix?",
+                "answer": "[Placeholder: Recommend a title with brief explanation.]"
+            },
+            {
+                "question": "Are horror movies suitable for teens?",
+                "answer": "[Placeholder: Discuss age ratings and parental guidance.]"
+            }
+        ]
+    }
+]

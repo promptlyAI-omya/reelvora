@@ -79,11 +79,62 @@
             }
 
             renderMovieGrid(filtered);
+            injectCategoryIntro(genre);
 
         } catch (error) {
             console.error('Error loading category:', error);
             $('#movieGrid').innerHTML = '<p style="text-align:center;color:var(--text-muted);grid-column:1/-1;">Failed to load movies.</p>';
         }
+    }
+
+    // ═══════════════════════════════════════════════
+    // CATEGORY INTRO (SEO)
+    // ═══════════════════════════════════════════════
+
+    function injectCategoryIntro(genre) {
+        const introContainer = $('#categoryIntro');
+        if (!introContainer) return;
+
+        const intros = {
+            'Action': `
+                <h2>Top Action Movies to Watch Now</h2>
+                <p>Get ready for adrenaline-pumping excitement with our curated collection of the best action movies. From high-speed chases and explosive battles to martial arts masterpieces, Reelvora brings you the ultimate action experience.</p>
+                <p>Whether you're a fan of superhero blockbusters or gritty crime thrillers, explore our list to find your next favorite film. Check back regularly for new additions and hidden gems.</p>
+            `,
+            'Sci-Fi': `
+                <h2>Best Sci-Fi Movies & Future Worlds</h2>
+                <p>Explore the unknown with our selection of mind-bending science fiction films. Dive into futuristic dystopias, space exploration sagas, and AI-driven narratives that challenge reality.</p>
+                <p>From classic space operas to modern cerebral thrillers, our Sci-Fi category covers it all. Discover movies that push the boundaries of imagination and visual storytelling.</p>
+            `,
+            'Horror': `
+                <h2>Scariest Horror Movies for a Thrilling Night</h2>
+                <p>Looking for a scare? Browse our collection of spine-chilling horror movies. We feature everything from supernatural hauntings and psychological thrillers to classic slashers.</p>
+                <p>Find the perfect film for your next movie night. Whether you prefer jump scares or slow-burn dread, Reelvora has something to keep you on the edge of your seat.</p>
+            `,
+            'Comedy': `
+                <h2>Laugh Out Loud with Top Comedy Films</h2>
+                <p>Lighten the mood with our handpicked comedy movies. Enjoy a mix of slapstick, romantic comedies, dark humor, and family-friendly fun guaranteed to make you smile.</p>
+                <p>Discover new favorites and revisit classic hits. Perfect for a relaxing evening or a movie marathon with friends.</p>
+            `,
+            'Drama': `
+                <h2>Powerful Drama Movies & Emotional Stories</h2>
+                <p>Experience compelling storytelling with our top-rated drama films. These movies explore complex characters, emotional depth, and gripping narratives that leave a lasting impact.</p>
+                <p>From award-winning masterpieces to indie darlings, find drama movies that resonate with you. Explore themes of love, loss, ambition, and redemption.</p>
+            `,
+            'Thriller': `
+                <h2>Edge-of-Your-Seat Thriller Movies</h2>
+                <p>Suspense, mystery, and high stakes define our thriller category. Watch movies that keep you guessing until the very end, featuring twists, turns, and intense psychological games.</p>
+                <p>Perfect for fans of crime dramas, mystery whodunits, and psychological suspense. Find your next gripping watch here.</p>
+            `
+        };
+
+        const defaultIntro = `
+            <h2>Browse Best ${escapeHTML(genre)} Movies</h2>
+            <p>Discover the best ${escapeHTML(genre)} movies on Reelvora. We curate top-rated films, hidden gems, and trending titles to help you find exactly what to watch next.</p>
+            <p>Explore our fast-growing collection and enjoy seamless browsing, trailers, and streaming options.</p>
+        `;
+
+        introContainer.innerHTML = intros[genre] || defaultIntro;
     }
 
     // ═══════════════════════════════════════════════

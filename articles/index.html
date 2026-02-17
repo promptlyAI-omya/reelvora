@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
 
-    <!-- SEO Meta — Dynamically set by JS -->
-    <title>Browse Movies by Genre – Reelvora</title>
+    <!-- SEO Meta -->
+    <title>Articles & Guides – Reelvora</title>
     <meta name="description"
-        content="Browse and discover movies by genre. Find the best action, horror, sci-fi, drama, comedy, and thriller films.">
-    <link rel="canonical" href="https://yourdomain.com/category/genre.html">
+        content="Read movie guides, streaming tips, and curated film lists on Reelvora. Your go-to resource for everything cinema.">
+    <link rel="canonical" href="https://yourdomain.com/articles/">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Browse Movies by Genre – Reelvora">
-    <meta property="og:description" content="Browse and discover movies by genre on Reelvora.">
+    <meta property="og:title" content="Articles & Guides – Reelvora">
+    <meta property="og:description" content="Read movie guides, streaming tips, and curated film lists on Reelvora.">
     <meta property="og:site_name" content="Reelvora">
 
     <!-- CSS -->
@@ -46,16 +46,11 @@
             </a>
             <div class="nav-links" id="navLinks">
                 <a href="/">Home</a>
+                <a href="/articles/" class="active">Articles</a>
                 <a href="/category/genre.html?genre=Action">Action</a>
                 <a href="/category/genre.html?genre=Sci-Fi">Sci-Fi</a>
                 <a href="/category/genre.html?genre=Horror">Horror</a>
                 <a href="/category/genre.html?genre=Drama">Drama</a>
-                <a href="/category/genre.html?genre=Thriller">Thriller</a>
-                <a href="/category/genre.html?genre=Comedy">Comedy</a>
-            </div>
-            <div class="nav-search" id="navSearch">
-                <input type="text" placeholder="Search movies..." id="searchInput" aria-label="Search movies">
-                <button class="nav-search-btn" id="searchBtn" aria-label="Toggle search">🔍</button>
             </div>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
                 <span></span><span></span><span></span>
@@ -63,18 +58,13 @@
         </div>
     </nav>
 
-    <!-- Search Overlay -->
-    <div class="search-overlay" id="searchOverlay">
-        <div class="search-results-grid" id="searchResults"></div>
-    </div>
-
-    <!-- ═══════════════ CATEGORY HEADER ═══════════════ -->
-    <header class="category-header">
-        <h1 class="category-title" id="categoryTitle">Loading...</h1>
-        <p class="category-count" id="categoryCount"></p>
+    <!-- ═══════════════ ARTICLES HEADER ═══════════════ -->
+    <header class="category-header" style="margin-top: calc(var(--nav-height) + 2rem);">
+        <h1 class="category-title">Articles & Guides</h1>
+        <p class="category-count" id="articleCount"></p>
     </header>
 
-    <!-- ═══════════════ AD SLOT — Native Banner (Top) ═══════════════ -->
+    <!-- ═══════════════ AD SLOT — Top ═══════════════ -->
     <div class="ad-slot ad-top" id="adTop">
         <div class="native-ad">
             <script async="async" data-cfasync="false"
@@ -83,28 +73,14 @@
         </div>
     </div>
 
-    <!-- ═══════════════ CATEGORY INTRO (SEO) ═══════════════ -->
-    <div class="category-intro" id="categoryIntro">
-        <!-- Dynamic genre-specific intro content injected by JS -->
-        <p style="color: var(--text-muted); font-style: italic;">[Placeholder: Category intro content will appear here]
-        </p>
-    </div>
-
-    <!-- ═══════════════ MOVIE GRID ═══════════════ -->
+    <!-- ═══════════════ ARTICLES GRID ═══════════════ -->
     <section class="section">
         <div class="container">
-            <div class="movie-grid" id="movieGrid">
-                <!-- Movie cards injected by JS -->
+            <div class="articles-grid" id="articlesGrid">
+                <!-- Article cards injected by JS -->
             </div>
         </div>
     </section>
-
-    <!-- ═══════════════ AD SLOT — Native ═══════════════ -->
-    <div class="container">
-        <div class="ad-slot ad-native" id="adNative">
-            <span class="ad-slot-label">Sponsored Content</span>
-        </div>
-    </div>
 
     <!-- ═══════════════ FOOTER ═══════════════ -->
     <footer class="footer">
@@ -126,6 +102,7 @@
                 <div class="footer-column">
                     <h4>Quick Links</h4>
                     <a href="/">Home</a>
+                    <a href="/articles/">Articles</a>
                 </div>
                 <div class="footer-column">
                     <h4>Legal</h4>
@@ -154,7 +131,7 @@
         <script src="https://www.highperformanceformat.com/d4a176b1a9c115fdc04f211d69080bdb/invoke.js"></script>
     </div>
 
-    <script src="/assets/js/category.js" defer></script>
+    <script src="/assets/js/articles.js" defer></script>
 
     <!-- Popunder Ad Script -->
     <script src="https://pl28736066.effectivegatecpm.com/2d/78/8d/2d788dff2e8e4f1c7ca85d04b30b9efb.js"></script>
