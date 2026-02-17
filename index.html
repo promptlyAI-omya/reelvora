@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+
+  <!-- SEO Meta -->
+  <title>Reelvora – Discover Trending Movies & Where to Watch</title>
+  <meta name="description"
+    content="Reelvora helps you discover trending movies, official trailers, ratings, and where to watch legally on OTT platforms.">
+  <meta name="keywords"
+    content="movies, films, streaming, movie reviews, trending movies, new releases 2026, where to watch, OTT">
+  <link rel="canonical" href="https://yourdomain.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Reelvora – Discover Trending Movies & Where to Watch">
+  <meta property="og:description"
+    content="Reelvora helps you discover trending movies, official trailers, ratings, and where to watch legally on OTT platforms.">
+  <meta property="og:image" content="https://yourdomain.com/assets/images/og-cover.webp">
+  <meta property="og:url" content="https://yourdomain.com/">
+  <meta property="og:site_name" content="Reelvora">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Reelvora – Discover Trending Movies & Where to Watch">
+  <meta name="twitter:description"
+    content="Reelvora helps you discover trending movies, official trailers, ratings, and where to watch legally on OTT platforms.">
+
+  <!-- Schema.org WebSite Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Reelvora",
+    "url": "https://yourdomain.com/",
+    "description": "Reelvora helps you discover trending movies, official trailers, ratings, and where to watch legally on OTT platforms.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://yourdomain.com/?search={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- Preconnect for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+
+  <!-- ═══════════════ LOADING SCREEN ═══════════════ -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loader">
+      <div class="loader-ring"></div>
+      <div class="loader-text">Reelvora</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════ NAVIGATION ═══════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-content">
+      <a href="/" class="nav-logo">
+        <span class="nav-logo-icon">🎬</span>
+        Reel<span class="logo-accent">vora</span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="/" class="active">Home</a>
+        <a href="/category/genre.html?genre=Action">Action</a>
+        <a href="/category/genre.html?genre=Sci-Fi">Sci-Fi</a>
+        <a href="/category/genre.html?genre=Horror">Horror</a>
+        <a href="/category/genre.html?genre=Drama">Drama</a>
+        <a href="/category/genre.html?genre=Thriller">Thriller</a>
+        <a href="/category/genre.html?genre=Comedy">Comedy</a>
+      </div>
+
+      <div class="nav-search" id="navSearch">
+        <input type="text" placeholder="Search movies..." id="searchInput" aria-label="Search movies">
+        <button class="nav-search-btn" id="searchBtn" aria-label="Toggle search">🔍</button>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ SEARCH RESULTS OVERLAY ═══════════════ -->
+  <div class="search-overlay" id="searchOverlay">
+    <div class="search-results-grid" id="searchResults"></div>
+  </div>
+
+  <!-- ═══════════════ HERO SECTION ═══════════════ -->
+  <section class="hero" id="heroSection">
+    <div class="hero-bg">
+      <img src="" alt="Featured movie backdrop" id="heroBgImage" loading="eager">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-info">
+        <div class="hero-badge">🔥 Trending Now</div>
+        <h1 class="hero-title" id="heroTitle">Loading...</h1>
+        <div class="hero-meta" id="heroMeta"></div>
+        <p class="hero-description" id="heroDescription"></p>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary" id="heroWatchBtn">▶ Watch Trailer</a>
+          <a href="#" class="btn btn-secondary" id="heroDetailBtn">More Info</a>
+        </div>
+      </div>
+      <div class="hero-carousel" id="heroCarousel">
+        <div class="hero-card-3d" id="heroCard">
+          <img src="" alt="Featured movie poster" id="heroCardImage">
+          <div class="hero-card-overlay">
+            <h3 id="heroCardTitle"></h3>
+            <p id="heroCardMeta"></p>
+          </div>
+        </div>
+        <div class="hero-dots" id="heroDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ AD SLOT #1 — Top Banner ═══════════════ -->
+  <!-- Insert your ad network script here (e.g., Google AdSense, Ezoic, Mediavine) -->
+  <div class="ad-slot ad-top" id="adTop">
+    <span class="ad-slot-label">Advertisement</span>
+  </div>
+
+  <!-- ═══════════════ MOVIE GRID SECTION ═══════════════ -->
+  <section class="section" id="movieSection">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Latest Movies</h2>
+        <div class="filter-bar" id="filterBar">
+          <!-- Genre filters injected by JS -->
+        </div>
+      </div>
+      <div class="movie-grid" id="movieGrid">
+        <!-- Movie cards injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ AD SLOT #2 — After First 6 Movies ═══════════════ -->
+  <!-- This ad is injected dynamically between movie cards by JavaScript -->
+
+  <!-- ═══════════════ GENRE SECTION ═══════════════ -->
+  <section class="section" id="genreSection">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Browse by Genre</h2>
+      </div>
+      <div class="genre-grid" id="genreGrid">
+        <!-- Genre cards injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ AD SLOT #3 — Native Ad ═══════════════ -->
+  <!-- Insert native/in-feed ad script here -->
+  <div class="container">
+    <div class="ad-slot ad-native" id="adNative">
+      <span class="ad-slot-label">Sponsored Content</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">🎬 Reel<span class="logo-accent">vora</span></div>
+          <p>Your ultimate destination for discovering movies. Explore trending films, watch trailers, and find where to
+            stream your favorites.</p>
+        </div>
+        <div class="footer-column">
+          <h4>Genres</h4>
+          <a href="/category/genre.html?genre=Action">Action</a>
+          <a href="/category/genre.html?genre=Horror">Horror</a>
+          <a href="/category/genre.html?genre=Sci-Fi">Sci-Fi</a>
+          <a href="/category/genre.html?genre=Drama">Drama</a>
+          <a href="/category/genre.html?genre=Comedy">Comedy</a>
+          <a href="/category/genre.html?genre=Thriller">Thriller</a>
+        </div>
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <a href="/">Home</a>
+          <a href="#movieSection">Movies</a>
+          <a href="#genreSection">Genres</a>
+        </div>
+        <div class="footer-column">
+          <h4>Legal</h4>
+          <a href="/privacy-policy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms of Service</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Reelvora. All rights reserved.</span>
+        <span>Built with 🎬 for movie lovers</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════ AD SLOT #4 — Sticky Bottom ═══════════════ -->
+  <!-- Insert sticky bottom ad script here -->
+  <div class="ad-slot ad-sticky" id="adSticky">
+    <span class="ad-slot-label">Advertisement</span>
+  </div>
+
+  <!-- ═══════════════ SCRIPTS ═══════════════ -->
+  <script src="/assets/js/app.js" defer></script>
+</body>
+
+</html>

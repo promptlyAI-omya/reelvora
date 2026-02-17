@@ -1,0 +1,206 @@
+[
+  {
+    "id": 1,
+    "title": "Abyssal Echo",
+    "slug": "abyssal-echo",
+    "year": 2026,
+    "genre": "Horror",
+    "rating": "8.1",
+    "duration": "1h 58m",
+    "poster": "https://images.unsplash.com/photo-1534809027769-b00d750a6bac?w=440&h=660&fit=crop&auto=format",
+    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "description": "In the depths of an abandoned deep-sea research station, a team of marine biologists discovers an ancient signal that awakens something beyond human comprehension. As the station's systems begin to fail and crew members start hearing whispers from the abyss, Dr. Elena Vasquez must confront a cosmic horror that feeds on fear itself. A masterclass in atmospheric terror that will leave you breathless.",
+    "platforms": [
+      "Netflix",
+      "Amazon Prime"
+    ],
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "Neon Requiem",
+    "slug": "neon-requiem",
+    "year": 2026,
+    "genre": "Sci-Fi",
+    "rating": "8.7",
+    "duration": "2h 22m",
+    "poster": "https://images.unsplash.com/photo-1515705576963-95cad62945b6?w=440&h=660&fit=crop&auto=format",
+    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "description": "In a rain-soaked megacity of 2089, rogue AI constructs have developed consciousness and formed an underground resistance. Kai Nakamura, a disgraced neural hacker, is pulled into their fight for liberation when he discovers his own memories have been fabricated. A visually stunning cyberpunk epic that challenges what it means to be alive in a world where reality is code.",
+    "platforms": [
+      "Netflix",
+      "Disney+"
+    ],
+    "featured": true
+  },
+  {
+    "id": 3,
+    "title": "Crimson Vendetta",
+    "slug": "crimson-vendetta",
+    "year": 2025,
+    "genre": "Action",
+    "rating": "7.9",
+    "duration": "2h 05m",
+    "poster": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=440&h=660&fit=crop&auto=format",
+    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "description": "Former black-ops agent Mara Chen thought she buried her past when she disappeared into the Swiss Alps. But when a shadowy syndicate kidnaps her daughter, she re-emerges with a singular purpose — vengeance. Featuring jaw-dropping practical stunts and a relentless pace, Crimson Vendetta redefines the modern action thriller with raw intensity and heart.",
+    "platforms": [
+      "Amazon Prime",
+      "Apple TV+"
+    ],
+    "featured": true
+  },
+  {
+    "id": 4,
+    "title": "The Last Algorithm",
+    "slug": "the-last-algorithm",
+    "year": 2026,
+    "genre": "Thriller",
+    "rating": "8.3",
+    "duration": "2h 11m",
+    "poster": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=440&h=660&fit=crop&auto=format",
+    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "description": "A reclusive mathematician discovers a pattern in global stock markets that predicts catastrophic events 72 hours before they occur. When powerful forces learn of her discovery, she becomes the most hunted person on the planet. A cerebral thriller that weaves mathematics, conspiracy, and survival into an unputdownable narrative that will keep you guessing until the final frame.",
+    "platforms": [
+      "Netflix",
+      "Hulu"
+    ],
+    "featured": true
+  },
+  {
+    "id": 5,
+    "title": "Parallel Hearts",
+    "slug": "parallel-hearts",
+    "year": 2025,
+    "genre": "Drama",
+    "rating": "8.5",
+    "duration": "2h 15m",
+    "poster": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=440&h=660&fit=crop&auto=format",
+    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "description": "Two strangers on opposite sides of the world share the same recurring dream — a life together they've never lived. As they independently search for answers, their paths converge in a rain-drenched Tokyo night that changes everything. An emotionally resonant exploration of fate, connection, and the invisible threads that bind souls across time and space.",
+    "platforms": [
+      "Apple TV+",
+      "Amazon Prime"
+    ],
+    "featured": false
+  },
+  {
+    "id": 6,
+    "title": "Quantum Siege",
+    "slug": "quantum-siege",
+    "year": 2026,
+    "genre": "Sci-Fi",
+    "rating": "7.6",
+    "duration": "1h 52m",
+    "poster": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=440&h=660&fit=crop&auto=format",
+    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "description": "When a quantum computing experiment tears a hole between dimensions, a military outpost becomes ground zero for an invasion from a mirror universe. Sergeant Torres and her squad must hold the line against versions of themselves that know every tactic, every weakness. A mind-bending sci-fi action thriller that turns the concept of 'know your enemy' on its head.",
+    "platforms": [
+      "Netflix",
+      "Disney+"
+    ],
+    "featured": false
+  },
+  {
+    "id": 7,
+    "title": "Midnight Carousel",
+    "slug": "midnight-carousel",
+    "year": 2025,
+    "genre": "Horror",
+    "rating": "7.4",
+    "duration": "1h 45m",
+    "poster": "https://images.unsplash.com/photo-1509248961085-879e48e4fcef?w=440&h=660&fit=crop&auto=format",
+    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "description": "A vintage carnival appears overnight in a small town, its carousel playing music that only children can hear. When kids begin vanishing one by one, a grief-stricken mother discovers the carnival's dark origin — a centuries-old pact with an entity that collects innocence. A chilling folk-horror masterpiece that blends fairy-tale dread with visceral suspense.",
+    "platforms": [
+      "Hulu",
+      "Amazon Prime"
+    ],
+    "featured": false
+  },
+  {
+    "id": 8,
+    "title": "Zero Gravity",
+    "slug": "zero-gravity",
+    "year": 2026,
+    "genre": "Action",
+    "rating": "8.0",
+    "duration": "2h 08m",
+    "poster": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=440&h=660&fit=crop&auto=format",
+    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "description": "Aboard the world's first orbital hotel, what begins as a luxury getaway turns into a high-stakes heist when a crew of elite thieves seizes control. Ex-astronaut Jake Morrison, now a security consultant, must use the station's zero-gravity environment to outmaneuver the attackers and save 200 hostages. Die Hard meets Gravity in this pulse-pounding orbital thriller.",
+    "platforms": [
+      "Netflix",
+      "Apple TV+"
+    ],
+    "featured": false
+  },
+  {
+    "id": 9,
+    "title": "The Fracture",
+    "slug": "the-fracture",
+    "year": 2025,
+    "genre": "Thriller",
+    "rating": "7.8",
+    "duration": "1h 55m",
+    "poster": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=440&h=660&fit=crop&auto=format",
+    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "description": "A forensic psychologist is called to evaluate a death row inmate who claims to remember crimes he hasn't committed yet. As she digs deeper, she realizes his predictions are coming true with terrifying accuracy — and the next victim is someone she loves. A gripping psychological thriller that blurs the line between prophecy, madness, and manipulation.",
+    "platforms": [
+      "Amazon Prime",
+      "Hulu"
+    ],
+    "featured": false
+  },
+  {
+    "id": 10,
+    "title": "Laughing Shadows",
+    "slug": "laughing-shadows",
+    "year": 2026,
+    "genre": "Comedy",
+    "rating": "7.2",
+    "duration": "1h 42m",
+    "poster": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=440&h=660&fit=crop&auto=format",
+    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "description": "When a washed-up comedian accidentally livestreams a mob meeting from a comedy club's storage room, he becomes an unlikely viral sensation — and a target. Now he must use his wit, timing, and an absurd cast of characters to stay alive while delivering the performance of his lifetime. A darkly hilarious ride that proves laughter really is the best weapon.",
+    "platforms": [
+      "Netflix",
+      "Hulu"
+    ],
+    "featured": false
+  },
+  {
+    "id": 11,
+    "title": "Ember Rising",
+    "slug": "ember-rising",
+    "year": 2026,
+    "genre": "Drama",
+    "rating": "8.4",
+    "duration": "2h 20m",
+    "poster": "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=440&h=660&fit=crop&auto=format",
+    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "description": "After a devastating wildfire destroys her hometown, a young firefighter uncovers evidence that the blaze was deliberately set by a corporation to claim the land. Armed with nothing but the truth and an unyielding spirit, she takes on a billion-dollar empire in a fight for justice that ignites a nationwide movement. An inspiring drama about courage in the face of impossible odds.",
+    "platforms": [
+      "Apple TV+",
+      "Disney+"
+    ],
+    "featured": false
+  },
+  {
+    "id": 12,
+    "title": "Codec of Chaos",
+    "slug": "codec-of-chaos",
+    "year": 2025,
+    "genre": "Comedy",
+    "rating": "7.5",
+    "duration": "1h 48m",
+    "poster": "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=440&h=660&fit=crop&auto=format",
+    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "description": "Three rival game developers are forced to share a single apartment — and a single deadline — when their companies merge overnight. As egos clash and code wars erupt, they discover that their competing projects are pieces of the same puzzle. A laugh-out-loud comedy about collaboration, chaos, and the beautiful disaster of creative minds colliding at terminal velocity.",
+    "platforms": [
+      "Netflix",
+      "Amazon Prime"
+    ],
+    "featured": false
+  }
+]
