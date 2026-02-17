@@ -1188,6 +1188,14 @@ select {
   color: var(--text-muted);
 }
 
+/* ── NATIVE BANNER AD ── */
+.native-ad {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 /* ── FOOTER ── */
 .footer {
   position: relative;
