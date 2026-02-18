@@ -100,38 +100,70 @@
 
     function renderPlatforms(platforms) {
         const grid = $('#platformsGrid');
+        const providers = currentMovie.providers || [];
+
+        // Map legacy string array to object structure if providers is empty but platforms has data (backward compatibility)
+        let displayList = providers;
+        if (displayList.length === 0 && platforms && platforms.length > 0) {
+            displayList = platforms.map(p => ({
+                name: p,
+                type: 'Watch',
+                link: '#' // No link for legacy
+            }));
+        }
+
         const platformIcons = {
             'Netflix': '🔴',
             'Amazon Prime': '📦',
+            'Amazon Prime Video': '📦',
+            'Prime Video': '📦',
             'Disney+': '🏰',
+            'Disney+ Hotstar': '🏰',
+            'Hotstar': '🏰',
+            'Apple TV': '🍎',
             'Apple TV+': '🍎',
             'Hulu': '💚',
-            'HBO Max': '💜'
+            'HBO Max': '💜',
+            'YouTube': '▶️',
+            'Google Play Movies': '▶️',
+            'JioCinema': '📽️',
+            'Zee5': '🦓',
+            'SonyLIV': '📺'
         };
 
-        if (platforms.length === 0) {
+        if (displayList.length === 0) {
             grid.innerHTML = `
-        <a href="#" class="affiliate-btn btn-check-availability" rel="nofollow sponsored" target="_blank">
-          <span>🔎</span> Check Availability
-        </a>
+        <div class="platforms-empty">
+            <a href="https://www.google.com/search?q=watch+${encodeURIComponent(currentMovie.title)}+online" class="affiliate-btn btn-check-availability" rel="nofollow sponsored" target="_blank">
+                <span>🔎</span> Check Availability
+            </a>
+            <p class="platform-note">Streaming availability may vary by region.</p>
+        </div>
       `;
             return;
         }
 
-        const buttonsHtml = platforms.map(p => `
-      <a href="#" class="affiliate-btn" data-platform="${escapeHTML(p)}" rel="nofollow sponsored" target="_blank">
-        <span>${platformIcons[p] || '📺'}</span> Watch on ${escapeHTML(p)}
-      </a>
-    `).join('');
+        const buttonsHtml = displayList.map(p => {
+            const icon = platformIcons[p.name] || '📺';
+            const action = p.type || 'Watch';
+            const label = `${action} on ${p.name}`;
+            const url = p.link || '#';
+
+            return `
+            <a href="${url}" class="affiliate-btn" target="_blank" rel="nofollow sponsored" aria-label="${label}">
+                <span>${icon}</span> ${label}
+            </a>
+            `;
+        }).join('');
 
         // Always add a generic fallback/check more options button
         const fallbackHtml = `
-      <a href="#" class="affiliate-btn btn-check-availability" rel="nofollow sponsored" target="_blank">
-        <span>🔎</span> Check More Options
+      <a href="https://www.justwatch.com/in/search?q=${encodeURIComponent(currentMovie.title)}" class="affiliate-btn btn-check-availability" rel="nofollow sponsored" target="_blank">
+        <span>🔎</span> More Options
       </a>
     `;
 
-        grid.innerHTML = buttonsHtml + fallbackHtml;
+        grid.innerHTML = buttonsHtml + fallbackHtml + '<p class="platform-note" style="width:100%; text-align:center; margin-top:0.5rem; font-size:0.8rem; opacity:0.7;">Streaming availability may vary by region.</p>';
     }
 
     // ═══════════════════════════════════════════════

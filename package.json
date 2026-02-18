@@ -1,0 +1,30 @@
+{
+  "name": "movie-webapp",
+  "version": "1.0.0",
+  "description": "A modern, high-performance, 3D-styled movie listing web app built with pure HTML, CSS, and vanilla JavaScript. Dark cinematic theme with glassmorphism effects, 3D hover animations, and neon purple accents. Fully static — ready to deploy on Netlify or Vercel.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/promptlyAI-omya/reelvora.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/promptlyAI-omya/reelvora/issues"
+  },
+  "homepage": "https://github.com/promptlyAI-omya/reelvora#readme",
+  "dependencies": {
+    "axios": "^1.13.5",
+    "dotenv": "^17.3.1",
+    "sharp": "^0.34.5",
+    "slugify": "^1.6.6"
+  }
+}

@@ -1,206 +1,792 @@
 [
   {
-    "id": 1,
-    "title": "Abyssal Echo",
-    "slug": "abyssal-echo",
-    "year": 2026,
-    "genre": "Horror",
-    "rating": "8.1",
-    "duration": "1h 58m",
-    "poster": "https://images.unsplash.com/photo-1534809027769-b00d750a6bac?w=440&h=660&fit=crop&auto=format",
-    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    "description": "In the depths of an abandoned deep-sea research station, a team of marine biologists discovers an ancient signal that awakens something beyond human comprehension. As the station's systems begin to fail and crew members start hearing whispers from the abyss, Dr. Elena Vasquez must confront a cosmic horror that feeds on fear itself. A masterclass in atmospheric terror that will leave you breathless.",
-    "platforms": [
-      "Netflix",
-      "Amazon Prime"
+    "id": 13,
+    "title": "Tumbbad",
+    "slug": "tumbbad",
+    "year": 2018,
+    "genre": "Fantasy",
+    "genres": [
+      "Fantasy",
+      "Horror"
     ],
-    "featured": true
-  },
-  {
-    "id": 2,
-    "title": "Neon Requiem",
-    "slug": "neon-requiem",
-    "year": 2026,
-    "genre": "Sci-Fi",
-    "rating": "8.7",
-    "duration": "2h 22m",
-    "poster": "https://images.unsplash.com/photo-1515705576963-95cad62945b6?w=440&h=660&fit=crop&auto=format",
-    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    "description": "In a rain-soaked megacity of 2089, rogue AI constructs have developed consciousness and formed an underground resistance. Kai Nakamura, a disgraced neural hacker, is pulled into their fight for liberation when he discovers his own memories have been fabricated. A visually stunning cyberpunk epic that challenges what it means to be alive in a world where reality is code.",
-    "platforms": [
-      "Netflix",
-      "Disney+"
-    ],
-    "featured": true
-  },
-  {
-    "id": 3,
-    "title": "Crimson Vendetta",
-    "slug": "crimson-vendetta",
-    "year": 2025,
-    "genre": "Action",
-    "rating": "7.9",
-    "duration": "2h 05m",
-    "poster": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=440&h=660&fit=crop&auto=format",
-    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    "description": "Former black-ops agent Mara Chen thought she buried her past when she disappeared into the Swiss Alps. But when a shadowy syndicate kidnaps her daughter, she re-emerges with a singular purpose — vengeance. Featuring jaw-dropping practical stunts and a relentless pace, Crimson Vendetta redefines the modern action thriller with raw intensity and heart.",
-    "platforms": [
-      "Amazon Prime",
-      "Apple TV+"
-    ],
-    "featured": true
-  },
-  {
-    "id": 4,
-    "title": "The Last Algorithm",
-    "slug": "the-last-algorithm",
-    "year": 2026,
-    "genre": "Thriller",
-    "rating": "8.3",
-    "duration": "2h 11m",
-    "poster": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=440&h=660&fit=crop&auto=format",
-    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    "description": "A reclusive mathematician discovers a pattern in global stock markets that predicts catastrophic events 72 hours before they occur. When powerful forces learn of her discovery, she becomes the most hunted person on the planet. A cerebral thriller that weaves mathematics, conspiracy, and survival into an unputdownable narrative that will keep you guessing until the final frame.",
-    "platforms": [
-      "Netflix",
-      "Hulu"
-    ],
-    "featured": true
-  },
-  {
-    "id": 5,
-    "title": "Parallel Hearts",
-    "slug": "parallel-hearts",
-    "year": 2025,
-    "genre": "Drama",
-    "rating": "8.5",
-    "duration": "2h 15m",
-    "poster": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=440&h=660&fit=crop&auto=format",
-    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    "description": "Two strangers on opposite sides of the world share the same recurring dream — a life together they've never lived. As they independently search for answers, their paths converge in a rain-drenched Tokyo night that changes everything. An emotionally resonant exploration of fate, connection, and the invisible threads that bind souls across time and space.",
-    "platforms": [
-      "Apple TV+",
-      "Amazon Prime"
-    ],
-    "featured": false
-  },
-  {
-    "id": 6,
-    "title": "Quantum Siege",
-    "slug": "quantum-siege",
-    "year": 2026,
-    "genre": "Sci-Fi",
     "rating": "7.6",
-    "duration": "1h 52m",
-    "poster": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=440&h=660&fit=crop&auto=format",
-    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    "description": "When a quantum computing experiment tears a hole between dimensions, a military outpost becomes ground zero for an invasion from a mirror universe. Sergeant Torres and her squad must hold the line against versions of themselves that know every tactic, every weakness. A mind-bending sci-fi action thriller that turns the concept of 'know your enemy' on its head.",
+    "duration": "1h 53m",
+    "poster": "/assets/images/posters/tumbbad.webp",
+    "trailer": "https://www.youtube.com/embed/ZjuhALyNgss",
+    "description": "India, 1918. On the outskirts of Tumbbad, a cursed village where it always rains, Vinayak, along with his mother and his brother, care of a mysterious old woman who keeps the secret of an ancestral treasure that Vinayak gets obsessed with.",
     "platforms": [
-      "Netflix",
-      "Disney+"
+      "Amazon Prime Video",
+      "Amazon Prime Video with Ads"
+    ],
+    "providers": [
+      {
+        "name": "Amazon Prime Video",
+        "type": "Stream",
+        "link": "https://www.amazon.in/s?k=Tumbbad&i=instant-video",
+        "logo": "/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
+      },
+      {
+        "name": "Amazon Prime Video with Ads",
+        "type": "Stream",
+        "link": "https://www.amazon.in/s?k=Tumbbad&i=instant-video",
+        "logo": "/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
+      },
+      {
+        "name": "Amazon Video",
+        "type": "Rent",
+        "link": "https://www.themoviedb.org/movie/538858/watch?locale=IN",
+        "logo": "/qR6FKvnPBx2O37FDg8PNM7efwF3.jpg"
+      }
+    ],
+    "language": "HI",
+    "tags": [
+      "Horror",
+      "India"
     ],
     "featured": false
   },
   {
-    "id": 7,
-    "title": "Midnight Carousel",
-    "slug": "midnight-carousel",
-    "year": 2025,
+    "id": 14,
+    "title": "Bulbbul",
+    "slug": "bulbbul",
+    "year": 2020,
     "genre": "Horror",
-    "rating": "7.4",
-    "duration": "1h 45m",
-    "poster": "https://images.unsplash.com/photo-1509248961085-879e48e4fcef?w=440&h=660&fit=crop&auto=format",
-    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    "description": "A vintage carnival appears overnight in a small town, its carousel playing music that only children can hear. When kids begin vanishing one by one, a grief-stricken mother discovers the carnival's dark origin — a centuries-old pact with an entity that collects innocence. A chilling folk-horror masterpiece that blends fairy-tale dread with visceral suspense.",
+    "genres": [
+      "Horror",
+      "Fantasy",
+      "Thriller"
+    ],
+    "rating": "6.6",
+    "duration": "1h 34m",
+    "poster": "/assets/images/posters/bulbbul.webp",
+    "trailer": "https://www.youtube.com/embed/4MGReT9-cAg",
+    "description": "A child bride grows up to be an enigmatic woman presiding over her household, harboring a painful past as supernatural murders of men plague her village.",
     "platforms": [
-      "Hulu",
-      "Amazon Prime"
+      "Netflix"
+    ],
+    "providers": [
+      {
+        "name": "Netflix",
+        "type": "Stream",
+        "link": "https://www.netflix.com/search?q=Bulbbul",
+        "logo": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+      }
+    ],
+    "language": "HI",
+    "tags": [
+      "Horror",
+      "India",
+      "Netflix"
+    ],
+    "featured": true
+  },
+  {
+    "id": 15,
+    "title": "Yavarum Nalam",
+    "slug": "yavarum-nalam",
+    "year": 2009,
+    "genre": "Mystery",
+    "genres": [
+      "Mystery",
+      "Horror"
+    ],
+    "rating": "6.3",
+    "duration": "2h 17m",
+    "poster": "/assets/images/posters/yavarum-nalam.webp",
+    "trailer": "https://www.youtube.com/embed/VSrhCiHFiGU",
+    "description": "Manohar and his family move into a new apartment on the 13th floor. However, their peace is disturbed by a spirit that uses the television set as a medium to communicate with them.",
+    "platforms": [
+      "Amazon Prime Video",
+      "Amazon Prime Video with Ads"
+    ],
+    "providers": [
+      {
+        "name": "Amazon Prime Video",
+        "type": "Stream",
+        "link": "https://www.amazon.in/s?k=Yavarum%20Nalam&i=instant-video",
+        "logo": "/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
+      },
+      {
+        "name": "Amazon Prime Video with Ads",
+        "type": "Stream",
+        "link": "https://www.amazon.in/s?k=Yavarum%20Nalam&i=instant-video",
+        "logo": "/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
+      },
+      {
+        "name": "Apple TV Store",
+        "type": "Rent",
+        "link": "https://tv.apple.com/search?term=Yavarum%20Nalam",
+        "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+      },
+      {
+        "name": "Google Play Movies",
+        "type": "Rent",
+        "link": "https://www.themoviedb.org/movie/19950/watch?locale=IN",
+        "logo": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg"
+      },
+      {
+        "name": "YouTube",
+        "type": "Rent",
+        "link": "https://www.youtube.com/results?search_query=Yavarum%20Nalam",
+        "logo": "/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg"
+      }
+    ],
+    "language": "TA",
+    "tags": [
+      "Horror",
+      "India"
     ],
     "featured": false
   },
   {
-    "id": 8,
-    "title": "Zero Gravity",
-    "slug": "zero-gravity",
+    "id": 16,
+    "title": "Stree",
+    "slug": "stree",
+    "year": 2018,
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Comedy"
+    ],
+    "rating": "6.9",
+    "duration": "2h 8m",
+    "poster": "/assets/images/posters/stree.webp",
+    "trailer": "https://www.youtube.com/embed/gzeaGcLLl_A",
+    "description": "Set in the town of Chanderi, Stree is based on the urban legend of Nale Ba that went viral in Karnataka in the 1990s, and features Shraddha Kapoor and Rajkummar Rao in pivotal roles.",
+    "platforms": [
+      "Amazon Prime Video",
+      "JioHotstar"
+    ],
+    "providers": [
+      {
+        "name": "Amazon Prime Video",
+        "type": "Stream",
+        "link": "https://www.amazon.in/s?k=Stree&i=instant-video",
+        "logo": "/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
+      },
+      {
+        "name": "JioHotstar",
+        "type": "Stream",
+        "link": "https://www.hotstar.com/in/search?q=Stree",
+        "logo": "/kVqjgpcwvDJOhCupjcLzwwtOp52.jpg"
+      },
+      {
+        "name": "Amazon Prime Video with Ads",
+        "type": "Stream",
+        "link": "https://www.amazon.in/s?k=Stree&i=instant-video",
+        "logo": "/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
+      },
+      {
+        "name": "Apple TV Store",
+        "type": "Rent",
+        "link": "https://tv.apple.com/search?term=Stree",
+        "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+      },
+      {
+        "name": "Google Play Movies",
+        "type": "Rent",
+        "link": "https://www.themoviedb.org/movie/533991/watch?locale=IN",
+        "logo": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg"
+      },
+      {
+        "name": "YouTube",
+        "type": "Rent",
+        "link": "https://www.youtube.com/results?search_query=Stree",
+        "logo": "/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg"
+      },
+      {
+        "name": "Amazon Video",
+        "type": "Rent",
+        "link": "https://www.themoviedb.org/movie/533991/watch?locale=IN",
+        "logo": "/qR6FKvnPBx2O37FDg8PNM7efwF3.jpg"
+      }
+    ],
+    "language": "HI",
+    "tags": [
+      "Horror",
+      "India",
+      "Comedy"
+    ],
+    "featured": false
+  },
+  {
+    "id": 17,
+    "title": "Haunted-3D",
+    "slug": "haunted-3d",
+    "year": 2011,
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
+    "rating": "5.9",
+    "duration": "2h 23m",
+    "poster": "/assets/images/posters/haunted-3d.webp",
+    "trailer": "https://www.youtube.com/embed/1g8a96rw-Jc",
+    "description": "A realtor finds himself accompanied by two ghostly entities inside a mansion. He learns of a violent event that took place years ago and is sent back in time to prevent it from happening.",
+    "platforms": [],
+    "providers": [],
+    "language": "HI",
+    "tags": [
+      "Horror",
+      "India"
+    ],
+    "featured": false
+  },
+  {
+    "id": 20,
+    "title": "Aval",
+    "slug": "aval",
+    "year": 2017,
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
+    "rating": "5.8",
+    "duration": "2h 16m",
+    "poster": "/assets/images/posters/aval.webp",
+    "trailer": "https://www.youtube.com/embed/Ft1KvQNteYY",
+    "description": "Two families have a tough time dealing with a revenge-seeking spirit, which is strangely connected with one of its members",
+    "platforms": [
+      "Apple TV Store",
+      "Google Play Movies"
+    ],
+    "providers": [
+      {
+        "name": "Apple TV Store",
+        "type": "Rent",
+        "link": "https://tv.apple.com/search?term=Aval",
+        "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+      },
+      {
+        "name": "Google Play Movies",
+        "type": "Rent",
+        "link": "https://www.themoviedb.org/movie/480308/watch?locale=IN",
+        "logo": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg"
+      },
+      {
+        "name": "YouTube",
+        "type": "Rent",
+        "link": "https://www.youtube.com/results?search_query=Aval",
+        "logo": "/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg"
+      }
+    ],
+    "language": "TA",
+    "tags": [
+      "Horror",
+      "India"
+    ],
+    "featured": false
+  },
+  {
+    "id": 21,
+    "title": "Bhoot",
+    "slug": "bhoot",
+    "year": 2003,
+    "genre": "Horror",
+    "genres": [
+      "Horror"
+    ],
+    "rating": "5.7",
+    "duration": "1h 53m",
+    "poster": "/assets/images/posters/bhoot.webp",
+    "trailer": "https://www.youtube.com/embed/zGXrqDEo9aI",
+    "description": "A Mumbai businessman and his wife are looking for a new flat. Apartment 1201 has been vacant since its previous occupant jumped to her death. Undeterred, the couple still decides to move in, but before long, the wife starts to have visions.",
+    "platforms": [
+      "Amazon Prime Video",
+      "ShemarooMe"
+    ],
+    "providers": [
+      {
+        "name": "Amazon Prime Video",
+        "type": "Stream",
+        "link": "https://www.amazon.in/s?k=Bhoot&i=instant-video",
+        "logo": "/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
+      },
+      {
+        "name": "ShemarooMe",
+        "type": "Stream",
+        "link": "https://www.themoviedb.org/movie/107937/watch?locale=IN",
+        "logo": "/ec3kgfQ6YXbT3AFRh8bkQZQFLb2.jpg"
+      },
+      {
+        "name": "Amazon Prime Video with Ads",
+        "type": "Stream",
+        "link": "https://www.amazon.in/s?k=Bhoot&i=instant-video",
+        "logo": "/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
+      },
+      {
+        "name": "Apple TV Store",
+        "type": "Rent",
+        "link": "https://tv.apple.com/search?term=Bhoot",
+        "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+      }
+    ],
+    "language": "HI",
+    "tags": [
+      "Horror",
+      "India"
+    ],
+    "featured": false
+  },
+  {
+    "id": 22,
+    "title": "How to Train Your Dragon",
+    "slug": "how-to-train-your-dragon",
+    "year": 2025,
+    "genre": "Fantasy",
+    "genres": [
+      "Fantasy",
+      "Family",
+      "Action",
+      "Adventure"
+    ],
+    "rating": "7.9",
+    "duration": "2h 5m",
+    "poster": "/assets/images/posters/how-to-train-your-dragon.webp",
+    "trailer": "https://www.youtube.com/embed/22w7z_lT6YM",
+    "description": "On the rugged isle of Berk, where Vikings and dragons have been bitter enemies for generations, Hiccup stands apart, defying centuries of tradition when he befriends Toothless, a feared Night Fury dragon. Their unlikely bond reveals the true nature of dragons, challenging the very foundations of Viking society.",
+    "platforms": [
+      "Apple TV Store",
+      "Amazon Video"
+    ],
+    "providers": [
+      {
+        "name": "Apple TV Store",
+        "type": "Rent",
+        "link": "https://tv.apple.com/search?term=How%20to%20Train%20Your%20Dragon",
+        "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+      },
+      {
+        "name": "Amazon Video",
+        "type": "Rent",
+        "link": "https://www.themoviedb.org/movie/1087192-how-to-train-your-dragon/watch?locale=IN",
+        "logo": "/qR6FKvnPBx2O37FDg8PNM7efwF3.jpg"
+      }
+    ],
+    "language": "EN",
+    "tags": [
+      "Netflix",
+      "Trending"
+    ],
+    "featured": true
+  },
+  {
+    "id": 23,
+    "title": "The Investigation of Lucy Letby",
+    "slug": "the-investigation-of-lucy-letby",
+    "year": 2026,
+    "genre": "Documentary",
+    "genres": [
+      "Documentary",
+      "Crime"
+    ],
+    "rating": "6.3",
+    "duration": "1h 35m",
+    "poster": "/assets/images/posters/the-investigation-of-lucy-letby.webp",
+    "trailer": "https://www.youtube.com/embed/x93eZD1F4vs",
+    "description": "An engaging and thought-provoking look at Lucy Letby, the former nurse serving life in prison after being convicted of the murders of seven infants and the attempted murders of seven others.",
+    "platforms": [
+      "Netflix"
+    ],
+    "providers": [
+      {
+        "name": "Netflix",
+        "type": "Stream",
+        "link": "https://www.netflix.com/search?q=The%20Investigation%20of%20Lucy%20Letby",
+        "logo": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+      }
+    ],
+    "language": "EN",
+    "tags": [
+      "Netflix",
+      "Documentary",
+      "Trending"
+    ],
+    "featured": true
+  },
+  {
+    "id": 24,
+    "title": "Dhurandhar",
+    "slug": "dhurandhar",
+    "year": 2025,
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Crime",
+      "Adventure"
+    ],
+    "rating": "6.9",
+    "duration": "3h 32m",
+    "poster": "/assets/images/posters/dhurandhar.webp",
+    "trailer": "https://www.youtube.com/embed/o--C7AH5SuI",
+    "description": "A mysterious traveler slips into the heart of Karachi's underbelly and rises through its ranks with lethal precision, only to tear the notorious ISI-Underworld nexus apart from within.",
+    "platforms": [
+      "Netflix"
+    ],
+    "providers": [
+      {
+        "name": "Netflix",
+        "type": "Stream",
+        "link": "https://www.netflix.com/search?q=Dhurandhar",
+        "logo": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+      }
+    ],
+    "language": "HI",
+    "tags": [
+      "Netflix",
+      "India",
+      "Trending"
+    ],
+    "featured": true
+  },
+  {
+    "id": 25,
+    "title": "Anaganaga Oka Raju",
+    "slug": "anaganaga-oka-raju",
+    "year": 2026,
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Comedy"
+    ],
+    "rating": "7.4",
+    "duration": "2h 27m",
+    "poster": "/assets/images/posters/anaganaga-oka-raju.webp",
+    "trailer": "",
+    "description": "A lazy, entitled brat who wants to lead an easy life is in for a rude shock that changes the course of his life.",
+    "platforms": [
+      "Netflix"
+    ],
+    "providers": [
+      {
+        "name": "Netflix",
+        "type": "Stream",
+        "link": "https://www.netflix.com/search?q=Anaganaga%20Oka%20Raju",
+        "logo": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+      }
+    ],
+    "language": "TE",
+    "tags": [
+      "Netflix",
+      "India",
+      "Trending"
+    ],
+    "featured": true
+  },
+  {
+    "id": 26,
+    "title": "Twisters",
+    "slug": "twisters",
+    "year": 2024,
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
+    "rating": "6.8",
+    "duration": "2h 3m",
+    "poster": "/assets/images/posters/twisters.webp",
+    "trailer": "https://www.youtube.com/embed/AZbEi95SuMg",
+    "description": "As storm season intensifies, the paths of former storm chaser Kate Carter and reckless social-media superstar Tyler Owens collide when terrifying phenomena never seen before are unleashed. The pair and their competing teams find themselves squarely in the paths of multiple storm systems converging over central Oklahoma in the fight of their lives.",
+    "platforms": [
+      "Apple TV Store",
+      "Google Play Movies"
+    ],
+    "providers": [
+      {
+        "name": "Apple TV Store",
+        "type": "Rent",
+        "link": "https://tv.apple.com/search?term=Twisters",
+        "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+      },
+      {
+        "name": "Google Play Movies",
+        "type": "Rent",
+        "link": "https://www.themoviedb.org/movie/718821-twisters/watch?locale=IN",
+        "logo": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg"
+      },
+      {
+        "name": "YouTube",
+        "type": "Rent",
+        "link": "https://www.youtube.com/results?search_query=Twisters",
+        "logo": "/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg"
+      },
+      {
+        "name": "Amazon Video",
+        "type": "Rent",
+        "link": "https://www.themoviedb.org/movie/718821-twisters/watch?locale=IN",
+        "logo": "/qR6FKvnPBx2O37FDg8PNM7efwF3.jpg"
+      }
+    ],
+    "language": "EN",
+    "tags": [
+      "Netflix",
+      "Trending"
+    ],
+    "featured": true
+  },
+  {
+    "id": 27,
+    "title": "Border 2",
+    "slug": "border-2",
     "year": 2026,
     "genre": "Action",
-    "rating": "8.0",
-    "duration": "2h 08m",
-    "poster": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=440&h=660&fit=crop&auto=format",
-    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    "description": "Aboard the world's first orbital hotel, what begins as a luxury getaway turns into a high-stakes heist when a crew of elite thieves seizes control. Ex-astronaut Jake Morrison, now a security consultant, must use the station's zero-gravity environment to outmaneuver the attackers and save 200 hostages. Die Hard meets Gravity in this pulse-pounding orbital thriller.",
-    "platforms": [
-      "Netflix",
-      "Apple TV+"
+    "genres": [
+      "Action",
+      "Drama",
+      "War"
     ],
-    "featured": false
+    "rating": "7.4",
+    "duration": "3h 19m",
+    "poster": "/assets/images/posters/border-2.webp",
+    "trailer": "https://www.youtube.com/embed/nvmc2ECk8Lo",
+    "description": "During the events of the 1971 Indo-Pak war, a new generation of young Indian warriors were getting ready to defend the nation from an even bigger threat to the Indian motherland.",
+    "platforms": [],
+    "providers": [],
+    "language": "HI",
+    "tags": [
+      "India",
+      "Trending",
+      "Theatrical"
+    ],
+    "featured": true
   },
   {
-    "id": 9,
-    "title": "The Fracture",
-    "slug": "the-fracture",
-    "year": 2025,
+    "id": 28,
+    "title": "Tu Yaa Main",
+    "slug": "tu-yaa-main",
+    "year": 2026,
     "genre": "Thriller",
-    "rating": "7.8",
-    "duration": "1h 55m",
-    "poster": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=440&h=660&fit=crop&auto=format",
-    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    "description": "A forensic psychologist is called to evaluate a death row inmate who claims to remember crimes he hasn't committed yet. As she digs deeper, she realizes his predictions are coming true with terrifying accuracy — and the next victim is someone she loves. A gripping psychological thriller that blurs the line between prophecy, madness, and manipulation.",
-    "platforms": [
-      "Amazon Prime",
-      "Hulu"
+    "genres": [
+      "Thriller",
+      "Romance",
+      "Adventure",
+      "Horror"
     ],
-    "featured": false
+    "rating": "8.0",
+    "duration": "2h 25m",
+    "poster": "/assets/images/posters/tu-yaa-main.webp",
+    "trailer": "",
+    "description": "A wannabe rapper from the outskirts of Mumbai and an affluent influencer elope to a coastal town, only to find themselves trapped in the pool of a derelict resort fighting for survival against the wrath of a ferocious crocodile.",
+    "platforms": [],
+    "providers": [],
+    "language": "HI",
+    "tags": [
+      "India",
+      "Trending"
+    ],
+    "featured": true
   },
   {
-    "id": 10,
-    "title": "Laughing Shadows",
-    "slug": "laughing-shadows",
-    "year": 2026,
-    "genre": "Comedy",
-    "rating": "7.2",
-    "duration": "1h 42m",
-    "poster": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=440&h=660&fit=crop&auto=format",
-    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    "description": "When a washed-up comedian accidentally livestreams a mob meeting from a comedy club's storage room, he becomes an unlikely viral sensation — and a target. Now he must use his wit, timing, and an absurd cast of characters to stay alive while delivering the performance of his lifetime. A darkly hilarious ride that proves laughter really is the best weapon.",
-    "platforms": [
-      "Netflix",
-      "Hulu"
-    ],
-    "featured": false
-  },
-  {
-    "id": 11,
-    "title": "Ember Rising",
-    "slug": "ember-rising",
-    "year": 2026,
-    "genre": "Drama",
-    "rating": "8.4",
-    "duration": "2h 20m",
-    "poster": "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=440&h=660&fit=crop&auto=format",
-    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    "description": "After a devastating wildfire destroys her hometown, a young firefighter uncovers evidence that the blaze was deliberately set by a corporation to claim the land. Armed with nothing but the truth and an unyielding spirit, she takes on a billion-dollar empire in a fight for justice that ignites a nationwide movement. An inspiring drama about courage in the face of impossible odds.",
-    "platforms": [
-      "Apple TV+",
-      "Disney+"
-    ],
-    "featured": false
-  },
-  {
-    "id": 12,
-    "title": "Codec of Chaos",
-    "slug": "codec-of-chaos",
+    "id": 29,
+    "title": "Param Sundari",
+    "slug": "param-sundari",
     "year": 2025,
-    "genre": "Comedy",
-    "rating": "7.5",
-    "duration": "1h 48m",
-    "poster": "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=440&h=660&fit=crop&auto=format",
-    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    "description": "Three rival game developers are forced to share a single apartment — and a single deadline — when their companies merge overnight. As egos clash and code wars erupt, they discover that their competing projects are pieces of the same puzzle. A laugh-out-loud comedy about collaboration, chaos, and the beautiful disaster of creative minds colliding at terminal velocity.",
-    "platforms": [
-      "Netflix",
-      "Amazon Prime"
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Drama",
+      "Comedy"
     ],
-    "featured": false
+    "rating": "6.0",
+    "duration": "2h 16m",
+    "poster": "/assets/images/posters/param-sundari.webp",
+    "trailer": "https://www.youtube.com/embed/fdWnfzsx-ks",
+    "description": "In Kerala's picturesque backwaters, a North Indian and South Indian find unexpected love. Their cultural differences spark a hilarious and chaotic romance, full of twists and turns.",
+    "platforms": [
+      "Amazon Prime Video",
+      "Amazon Prime Video with Ads"
+    ],
+    "providers": [
+      {
+        "name": "Amazon Prime Video",
+        "type": "Stream",
+        "link": "https://www.amazon.in/s?k=Param%20Sundari&i=instant-video",
+        "logo": "/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
+      },
+      {
+        "name": "Amazon Prime Video with Ads",
+        "type": "Stream",
+        "link": "https://www.amazon.in/s?k=Param%20Sundari&i=instant-video",
+        "logo": "/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
+      },
+      {
+        "name": "Amazon Video",
+        "type": "Rent",
+        "link": "https://www.themoviedb.org/movie/1226354/watch?locale=IN",
+        "logo": "/qR6FKvnPBx2O37FDg8PNM7efwF3.jpg"
+      }
+    ],
+    "language": "HI",
+    "tags": [
+      "India",
+      "Trending"
+    ],
+    "featured": true
+  },
+  {
+    "id": 30,
+    "title": "Trending",
+    "slug": "trending",
+    "year": 2025,
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "rating": "N/A",
+    "duration": "TBA",
+    "poster": "/assets/images/posters/trending.webp",
+    "trailer": "https://www.youtube.com/embed/s3wnvH5n9Gw",
+    "description": "A vlogging couple chasing online popularity, desperately go to great lengths and does things to remain in the limelight as the “trending” pair, and their relationship begins to deteriorate.",
+    "platforms": [
+      "Amazon Prime Video",
+      "Amazon Prime Video with Ads"
+    ],
+    "providers": [
+      {
+        "name": "Amazon Prime Video",
+        "type": "Stream",
+        "link": "https://www.amazon.in/s?k=Trending&i=instant-video",
+        "logo": "/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
+      },
+      {
+        "name": "Amazon Prime Video with Ads",
+        "type": "Stream",
+        "link": "https://www.amazon.in/s?k=Trending&i=instant-video",
+        "logo": "/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
+      },
+      {
+        "name": "Amazon Video",
+        "type": "Rent",
+        "link": "https://www.themoviedb.org/movie/548437/watch?locale=IN",
+        "logo": "/qR6FKvnPBx2O37FDg8PNM7efwF3.jpg"
+      }
+    ],
+    "language": "TA",
+    "tags": [
+      "India",
+      "Trending"
+    ],
+    "featured": true
+  },
+  {
+    "id": 31,
+    "title": "Sinners",
+    "slug": "sinners",
+    "year": 2025,
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Action",
+      "Thriller"
+    ],
+    "rating": "7.5",
+    "duration": "2h 18m",
+    "poster": "/assets/images/posters/sinners.webp",
+    "trailer": "https://www.youtube.com/embed/l2h2lC0vlX4",
+    "description": "Trying to leave their troubled lives behind, twin brothers return to their hometown to start again, only to discover that an even greater evil is waiting to welcome them back.",
+    "platforms": [
+      "JioHotstar",
+      "Apple TV Store"
+    ],
+    "providers": [
+      {
+        "name": "JioHotstar",
+        "type": "Stream",
+        "link": "https://www.hotstar.com/in/search?q=Sinners",
+        "logo": "/kVqjgpcwvDJOhCupjcLzwwtOp52.jpg"
+      },
+      {
+        "name": "Apple TV Store",
+        "type": "Rent",
+        "link": "https://tv.apple.com/search?term=Sinners",
+        "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+      },
+      {
+        "name": "Amazon Video",
+        "type": "Rent",
+        "link": "https://www.themoviedb.org/movie/1233413-sinners/watch?locale=IN",
+        "logo": "/qR6FKvnPBx2O37FDg8PNM7efwF3.jpg"
+      }
+    ],
+    "language": "EN",
+    "tags": [
+      "Trending",
+      "Hollywood"
+    ],
+    "featured": true
+  },
+  {
+    "id": 32,
+    "title": "Nobody 2",
+    "slug": "nobody-2",
+    "year": 2025,
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
+    "rating": "7.0",
+    "duration": "1h 29m",
+    "poster": "/assets/images/posters/nobody-2.webp",
+    "trailer": "https://www.youtube.com/embed/-5X2pt95cIo",
+    "description": "Former assassin Hutch Mansell takes his family on a nostalgic vacation to a small-town theme park, only to be pulled back into violence when they clash with a corrupt operator, a crooked sheriff, and a ruthless crime boss.",
+    "platforms": [
+      "Apple TV Store",
+      "Zee5"
+    ],
+    "providers": [
+      {
+        "name": "Apple TV Store",
+        "type": "Rent",
+        "link": "https://tv.apple.com/search?term=Nobody%202",
+        "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+      },
+      {
+        "name": "Zee5",
+        "type": "Rent",
+        "link": "https://www.zee5.com/search?q=Nobody%202",
+        "logo": "/gP67NRy1ShUJilrzMsbOmEmdmcv.jpg"
+      },
+      {
+        "name": "Amazon Video",
+        "type": "Rent",
+        "link": "https://www.themoviedb.org/movie/1007734-nobody-2/watch?locale=IN",
+        "logo": "/qR6FKvnPBx2O37FDg8PNM7efwF3.jpg"
+      }
+    ],
+    "language": "EN",
+    "tags": [
+      "Trending",
+      "Hollywood",
+      "Action"
+    ],
+    "featured": true
+  },
+  {
+    "id": 33,
+    "title": "Books Are Our Weapons",
+    "slug": "books-are-our-weapons",
+    "year": 2026,
+    "genre": "Unknown",
+    "genres": [],
+    "rating": "N/A",
+    "duration": "1h 13m",
+    "poster": "/assets/images/posters/books-are-our-weapons.webp",
+    "trailer": "",
+    "description": "A socially committed student commune gathers in its yearly camp to welcome new members, debate on feminism, culture critique and direct democracy, but also sit by the fireplace and sing songs of the movement.",
+    "platforms": [],
+    "providers": [],
+    "language": "HU",
+    "tags": [
+      "Trending",
+      "Hollywood",
+      "Horror"
+    ],
+    "featured": true
   }
 ]

@@ -1,137 +1,241 @@
 [
     {
+        "id": 1,
         "title": "Top 10 Sci-Fi Movies You Must Watch in 2026",
         "slug": "top-10-sci-fi-movies-2026",
-        "excerpt": "Discover the most mind-bending science fiction films releasing this year. From AI thrillers to space epics, here are our top picks.",
-        "date": "2026-02-15",
+        "excerpt": "Discover the most mind-bending science fiction films releasing this year. From AI thrillers to space epics, here are our top picks for 2026.",
+        "date": "2026-02-18",
         "category": "Lists",
         "readTime": "8 min read",
-        "coverImage": "/assets/images/articles/placeholder-cover.webp",
+        "coverImage": "/assets/images/posters/mickey-17.webp",
         "featured": true,
+        "tags": [
+            "Sci-Fi",
+            "2026",
+            "Movies"
+        ],
         "sections": [
             {
                 "heading": "The Rise of AI-Driven Storylines",
-                "content": "[Placeholder: Write 100–150 words about how AI themes are dominating sci-fi in 2026.]"
+                "content": "<p>2026 is shaping up to be a landmark year for science fiction, with Artificial Intelligence taking center stage. Unlike the dystopias of the past, this year's lineup explores the nuanced relationship between humanity and synthetic consciousness. Films like <strong>'Neural Horizon'</strong> and <strong>'The Last Algorithm'</strong> constitute a shift towards philosophical questions: What does it mean to be alive when code can simulate emotion?</p><p>Directors are moving away from the 'evil robot' trope, opting instead for narratives that blur the lines between creator and creation. Expect stunning visuals of neon-lit neural networks and quiet, character-driven dramas set against the backdrop of a tech-saturated future.</p>"
             },
             {
                 "heading": "Space Exploration Epics Making a Comeback",
-                "content": "[Placeholder: Write 100–150 words about the resurgence of space exploration narratives.]"
+                "content": "<p>After a few years of grounded sci-fi, we are finally returning to the stars. <strong>'Project Hail Mary'</strong> (starring Ryan Gosling) is undoubtedly the most anticipated release, promising a scientifically accurate yet deeply emotional ride through the cosmos. Alongside it, several original IPs are launching, focusing on the colonization of Mars and the political intrigue of interstellar civilizations.</p><p>These films aren't just about the spectacle of space; they are human stories about isolation, hope, and the indomitable spirit of exploration. With advancements in VFX, 2026 will offer some of the most realistic depictions of space travel ever put to film.</p>"
             },
             {
                 "heading": "Indie Sci-Fi Gems to Watch",
-                "content": "[Placeholder: Write 100–150 words about lesser-known sci-fi films worth watching.]"
+                "content": "<p>While blockbusters grab the headlines, the indie scene is where the diverse innovation happens. Look out for <strong>'Memory Lane'</strong>, a lo-fi time travel thriller that's already generating buzz at festivals. These smaller budget films often rely on high-concept ideas rather than CGI spectacle, delivering gut-punching twists that stay with you long after the credits roll.</p>"
             }
         ],
         "faq": [
             {
-                "question": "What is the best sci-fi movie of 2026?",
-                "answer": "[Placeholder: Add your recommended title and brief reasoning here.]"
+                "question": "What is the biggest Sci-Fi movie of 2026?",
+                "answer": "'Mickey 17' by Bong Joon-ho and 'Project Hail Mary' are currently the frontrunners for the biggest sci-fi events of the year."
             },
             {
-                "question": "Where can I stream sci-fi movies?",
-                "answer": "[Placeholder: List 2–3 OTT platforms and explain availability.]"
+                "question": "Are there any cyberpunk movies coming out?",
+                "answer": "Yes, several titles including 'Neon Dust' serve the cyberpunk aesthetic, focusing on corporate espionage in futuristic megacities."
             }
         ]
     },
     {
-        "title": "How to Choose the Best OTT Platform for Movies",
-        "slug": "best-ott-platform-for-movies",
-        "excerpt": "Netflix, Amazon Prime, Disney+ — which streaming service offers the best value for movie lovers? We break it down.",
-        "date": "2026-02-10",
-        "category": "Guides",
-        "readTime": "6 min read",
-        "coverImage": "/assets/images/articles/placeholder-cover.webp",
+        "id": 2,
+        "title": "Best Bollywood Horror Movies of All Time",
+        "slug": "best-bollywood-horror-movies",
+        "excerpt": "From Tumbbad to Stree, explore the scariest and most innovative horror films Indian cinema has to offer.",
+        "date": "2026-02-17",
+        "category": "Lists",
+        "readTime": "10 min read",
+        "coverImage": "/assets/images/posters/tumbbad.webp",
         "featured": true,
+        "tags": [
+            "Horror",
+            "Bollywood",
+            "India"
+        ],
         "sections": [
             {
-                "heading": "Comparing Content Libraries",
-                "content": "[Placeholder: Write 100–150 words comparing the movie catalogs of major OTT platforms.]"
+                "heading": "The Renaissance of Indian Horror: Tumbbad",
+                "content": "<p>If there is one film that redefined Indian horror, it is <strong>Tumbbad</strong>. Moving away from jump scares and white-sari-clad ghosts, Tumbbad delves into rich mythology and primal greed. The atmosphere is thick with dread, and the visuals are world-class. It’s not just a scary movie; it’s a folktale nightmare comes to life. If you haven't watched it yet, you are missing a masterpiece of atmospheric horror.</p>"
             },
             {
-                "heading": "Pricing and Plans Breakdown",
-                "content": "[Placeholder: Write 100–150 words comparing subscription costs and features.]"
+                "heading": "Horror Meets Comedy: The Stree Phenomenon",
+                "content": "<p><strong>Stree</strong> proved that you can laugh and scream at the same time. This film, based on the 'Nale Ba' urban legend, combines sharp social commentary with genuine chills. Its sequel and the surrounding 'horror-comedy universe' (including <strong>Bhediya</strong> and <strong>Munjya</strong>) have created a unique niche in Bollywood that appeals to mass audiences while respecting the genre.</p>"
             },
             {
-                "heading": "Which Platform Suits You Best?",
-                "content": "[Placeholder: Write 100–150 words with a recommendation framework based on preferences.]"
+                "heading": "Psychological Terrors: 13B and Phobia",
+                "content": "<p>For those who prefer their horror cerebral, <strong>13B: Fear Has a New Address</strong> remains a benchmark. It turns the comfort of a new home into a suffocating trap via a television set. Similarly, <strong>Phobia</strong> starring Radhika Apte is a masterclass in tension, playing on the fear of the unknown within one's own mind. These films prove that you don't need a monster to be terrified.</p>"
             }
         ],
         "faq": [
             {
-                "question": "Which OTT platform has the most movies?",
-                "answer": "[Placeholder: Provide a factual comparison.]"
+                "question": "Is Tumbbad available on OTT?",
+                "answer": "Yes, Tumbbad is strictly a cult classic now available on Prime Video."
             },
             {
-                "question": "Can I use multiple OTT platforms?",
-                "answer": "[Placeholder: Explain bundling options and tips.]"
+                "question": "What is the scariest Hindi movie?",
+                "answer": "Many consider 'Raat' (1992) or 'Tumbbad' to be the scariest due to their atmosphere, while 'Bhoot' (2003) is famous for its jump scares."
             }
         ]
     },
     {
-        "title": "The Ultimate Guide to Movie Ratings Explained",
-        "slug": "movie-ratings-explained",
-        "excerpt": "IMDb, Rotten Tomatoes, Metacritic — what do these ratings actually mean? Learn how to read movie scores like a pro.",
+        "id": 3,
+        "title": "Upcoming Indian Movies in 2026: The Big Releases",
+        "slug": "upcoming-indian-movies-2026",
+        "excerpt": "Get ready for the biggest blockbusters of 2026. Here’s a look at the most anticipated Indian films across languages.",
+        "date": "2026-02-16",
+        "category": "Guide",
+        "readTime": "6 min read",
+        "coverImage": "/assets/images/posters/border-2.webp",
+        "featured": true,
+        "tags": [
+            "Upcoming",
+            "India",
+            "2026"
+        ],
+        "sections": [
+            {
+                "heading": "The Return of Legends",
+                "content": "<p>2026 will see the return of massive franchises. <strong>Border 2</strong> is set to reignite patriotism with a star-studded cast and high-octane war sequences. The nostalgia factor combined with modern production values makes this one of the biggest theatrical events of the year.</p>"
+            },
+            {
+                "heading": "Pan-Indian Spectacles",
+                "content": "<p>The blurred lines between Bollywood, Tollywood, and other industries continue to fade. <strong>Dhurandhar</strong> is generating massive buzz as a cross-industry action thriller. Expect high-concept action, massive sets, and a release strategy that targets every corner of the country. The era of the 'Pan-Indian' superstar is fully here.</p>"
+            },
+            {
+                "heading": "Content-Driven Cinema",
+                "content": "<p>Amidst the explosions, films like <strong>Param Sundari</strong> (2025/2026 release cycle) promise to bring grounded, heartfelt storytelling back to the screen. Audiences are increasingly craving stories that resonate on a personal level, and 2026's slate has a healthy mix of masala and meaning.</p>"
+            }
+        ],
+        "faq": [
+            {
+                "question": "When is Border 2 releasing?",
+                "answer": "Border 2 is scheduled for a major holiday release in 2026, aiming for maximum theatrical footfall."
+            },
+            {
+                "question": "Are there any big South Indian movies in 2026?",
+                "answer": "Absolutely. Several untitled projects from major stars like Prabhas and Allu Arjun are slated for late 2026 releases."
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Best Movies Streaming on Netflix This Month",
+        "slug": "best-netflix-movies-this-month",
+        "excerpt": "Don't know what to watch? We've curated the best new arrivals and hidden gems on Netflix for you.",
+        "date": "2026-02-14",
+        "category": "Streaming",
+        "readTime": "5 min read",
+        "coverImage": "/assets/images/posters/sqaud-game.webp",
+        "featured": false,
+        "tags": [
+            "Netflix",
+            "Streaming",
+            "Guides"
+        ],
+        "sections": [
+            {
+                "heading": "Trending Now",
+                "content": "<p>Netflix's top 10 is currently dominated by <strong>'Twisters'</strong>, a high-energy disaster movie that demands the biggest screen you have. If you missed it in theaters, now is the perfect time to catch the mayhem. Also trending is <strong>'The Investigation of Lucy Letby'</strong>, a gripping documentary that is keeping true-crime fans glued to their screens.</p>"
+            },
+            {
+                "heading": "Critics' Choice",
+                "content": "<p>For a more critically acclaimed experience, check out <strong>'His Three Daughters'</strong>. It’s a masterclass in acting and subtle storytelling. Netflix continues to be a haven for mid-budget dramas that studios rarely back for theatrical release anymore.</p>"
+            },
+            {
+                "heading": "Hidden Gems",
+                "content": "<p>Buried deep in the catalog is <strong>'Rebel Ridge'</strong>, one of the tightest thrillers of recent years. It features Jeremy Saulnier’s signature tension and is a must-watch for fans of gritty action.</p>"
+            }
+        ],
+        "faq": [
+            {
+                "question": "How often does Netflix add new movies?",
+                "answer": "Netflix updates its library almost daily, with the biggest drops usually happening on Fridays and the first of the month."
+            },
+            {
+                "question": "Is 'Stranger Things' returning this month?",
+                "answer": "No, the final season is slated for a later release date. Check our Upcoming section for details."
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "How to Choose the Best OTT Platform in India",
+        "slug": "best-ott-platform-india",
+        "excerpt": "Netflix, Prime Video, Disney+ Hotstar, JioCinema, SonyLIV... keeping up is hard. Here is a guide to picking the right subscription for you.",
+        "date": "2026-02-10",
+        "category": "Guides",
+        "readTime": "7 min read",
+        "coverImage": "/assets/images/posters/ott-collage.webp",
+        "featured": false,
+        "tags": [
+            "OTT",
+            "India",
+            "Guide"
+        ],
+        "sections": [
+            {
+                "heading": "The Big Three: Netflix, Prime, Hotstar",
+                "content": "<p><strong>Netflix</strong> remains the king of premium UI and international content, but it comes at a premium price. <strong>Prime Video</strong> offers the best value, bundling shopping benefits and a massive library of regional Indian cinema. <strong>Disney+ Hotstar</strong> was once the home of HBO, but now focuses heavily on cricket and local specials. If you are a sports fan, Hotstar is non-negotiable.</p>"
+            },
+            {
+                "heading": "The Rise of JioCinema",
+                "content": "<p><strong>JioCinema</strong> has disrupted the market with free streaming and acquiring HBO content. It is rapidly becoming a must-have, especially for premium western TV shows (Succession, House of the Dragon). However, the user interface still lags behind Netflix.</p>"
+            },
+            {
+                "heading": "Verdict",
+                "content": "<p>If you want movies: <strong>Prime Video</strong> has the largest library of recent Indian hits. If you want series: <strong>Netflix</strong> and <strong>JioCinema</strong> are your best bets. For sports: <strong>Hotstar</strong>.</p>"
+            }
+        ],
+        "faq": [
+            {
+                "question": "Which OTT platform is the cheapest?",
+                "answer": "JioCinema offers a lot of content for free (ad-supported), making it the most accessible. Prime Video is the best value for money due to the Amazon bundle."
+            },
+            {
+                "question": "Where can I watch HBO shows in India?",
+                "answer": "HBO content is currently available exclusively on JioCinema in India."
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Understanding IMDb and Rotten Tomatoes Ratings",
+        "slug": "understanding-media-ratings",
+        "excerpt": "Confused why a movie has 90% on Rotten Tomatoes but 6.0 on IMDb? We explain how these scores work and which one to trust.",
         "date": "2026-02-05",
         "category": "Guides",
         "readTime": "5 min read",
-        "coverImage": "/assets/images/articles/placeholder-cover.webp",
-        "featured": true,
-        "sections": [
-            {
-                "heading": "Understanding IMDb Ratings",
-                "content": "[Placeholder: Write 100–150 words explaining how IMDb ratings work.]"
-            },
-            {
-                "heading": "Rotten Tomatoes: Critics vs Audience",
-                "content": "[Placeholder: Write 100–150 words about the Tomatometer and audience score difference.]"
-            },
-            {
-                "heading": "How to Use Ratings to Pick Movies",
-                "content": "[Placeholder: Write 100–150 words with practical tips on using ratings effectively.]"
-            }
-        ],
-        "faq": [
-            {
-                "question": "Is IMDb rating reliable?",
-                "answer": "[Placeholder: Discuss reliability and potential biases.]"
-            },
-            {
-                "question": "What is a good Rotten Tomatoes score?",
-                "answer": "[Placeholder: Explain the scoring thresholds.]"
-            }
-        ]
-    },
-    {
-        "title": "Best Horror Movies to Watch This Weekend",
-        "slug": "best-horror-movies-weekend",
-        "excerpt": "Looking for a scare? Here are the most terrifying horror films you can stream right now on your favorite platforms.",
-        "date": "2026-01-28",
-        "category": "Lists",
-        "readTime": "7 min read",
-        "coverImage": "/assets/images/articles/placeholder-cover.webp",
+        "coverImage": "/assets/images/posters/ratings.webp",
         "featured": false,
+        "tags": [
+            "Ratings",
+            "Guide",
+            "IMDb"
+        ],
         "sections": [
             {
-                "heading": "Classic Horror That Still Terrifies",
-                "content": "[Placeholder: Write 100–150 words about timeless horror films.]"
+                "heading": "IMDb: The People's Voice",
+                "content": "<p><strong>IMDb</strong> ratings are a weighted average of user votes. This makes it a great metric for 'enjoyability' and general audience sentiment. However, it can be prone to review bombing and recency bias. A rating above 7.0 is usually considered 'Good', while anything above 8.0 is 'Must Watch'.</p>"
             },
             {
-                "heading": "Modern Horror Masterpieces",
-                "content": "[Placeholder: Write 100–150 words about recent standout horror movies.]"
+                "heading": "Rotten Tomatoes: The Critic's Consensus",
+                "content": "<p><strong>Rotten Tomatoes</strong> is often misunderstood. The percentage (Tomatometer) represents the <em>percentage of critics who gave the film a positive review</em>, NOT the average score. A movie can have a 100% score with an average rating of 6/10 if every critic thought it was 'just okay'. It measures <strong>consensus</strong>, not quality.</p>"
             },
             {
-                "heading": "Hidden Horror Gems on Streaming",
-                "content": "[Placeholder: Write 100–150 words about underrated horror films on OTT platforms.]"
+                "heading": "Which One Should You Trust?",
+                "content": "<p>Trust <strong>Rotten Tomatoes</strong> if you want to know if a movie is well-made and technically sound. Trust <strong>IMDb</strong> if you want to know if you'll have a good time watching it with popcorn. For niche genres like horror or comedy, audience scores are often more reliable than critics.</p>"
             }
         ],
         "faq": [
             {
-                "question": "What is the scariest movie on Netflix?",
-                "answer": "[Placeholder: Recommend a title with brief explanation.]"
+                "question": "What is 'Certified Fresh'?",
+                "answer": "It means a movie has a steady Tomatometer of 75% or higher after a set amount of reviews, including reviews from Top Critics."
             },
             {
-                "question": "Are horror movies suitable for teens?",
-                "answer": "[Placeholder: Discuss age ratings and parental guidance.]"
+                "question": "Why do user and critic scores differ so much?",
+                "answer": "Critics often look for technical mastery and originality, while audiences prioritize entertainment value and emotional payoff."
             }
         ]
     }

@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
 
-    <!-- SEO Meta — Dynamically set by JS -->
-    <title>Browse Movies by Genre – Reelvora</title>
+    <!-- SEO Meta -->
+    <title>Trending Movies 2026 – What’s Popular Right Now | Reelvora</title>
     <meta name="description"
-        content="Browse and discover movies by genre. Find the best action, horror, sci-fi, drama, comedy, and thriller films.">
-    <link rel="canonical" href="https://yourdomain.com/category/genre.html">
+        content="Discover the top trending movies globally and in India, including Netflix hits and theatrical releases.">
+    <link rel="canonical" href="https://yourdomain.com/trending/">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Browse Movies by Genre – Reelvora">
-    <meta property="og:description" content="Browse and discover movies by genre on Reelvora.">
+    <meta property="og:title" content="Trending Movies 2026 – What’s Popular Right Now | Reelvora">
+    <meta property="og:description" content="Discover the top trending movies globally and in India.">
     <meta property="og:site_name" content="Reelvora">
 
     <!-- CSS -->
@@ -68,10 +68,10 @@
         <div class="search-results-grid" id="searchResults"></div>
     </div>
 
-    <!-- ═══════════════ CATEGORY HEADER ═══════════════ -->
+    <!-- ═══════════════ HERO: TRENDING NOW ═══════════════ -->
     <header class="category-header">
-        <h1 class="category-title" id="categoryTitle">Loading...</h1>
-        <p class="category-count" id="categoryCount"></p>
+        <h1 class="category-title">Trending Now</h1>
+        <p class="category-count">See what everyone is watching</p>
     </header>
 
     <!-- ═══════════════ AD SLOT — Native Banner (Top) ═══════════════ -->
@@ -83,56 +83,38 @@
         </div>
     </div>
 
-    <!-- ═══════════════ CATEGORY INTRO (SEO) ═══════════════ -->
-    <div class="category-intro" id="categoryIntro">
-        <!-- Dynamic genre-specific intro content injected by JS -->
-        <p style="color: var(--text-muted); font-style: italic;">[Placeholder: Category intro content will appear here]
-        </p>
-    </div>
-
-    <!-- ═══════════════ MOVIE GRID ═══════════════ -->
+    <!-- ═══════════════ SECTION 1: NETFLIX ═══════════════ -->
     <section class="section">
-        <div class="category-layout">
-            <!-- Filter Sidebar -->
-            <aside class="filter-sidebar" id="filterSidebar">
-                <div class="filter-header">
-                    <h3>Filters</h3>
-                    <button id="resetFilters" class="btn-text">Reset</button>
-                </div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">🔥 Trending on Netflix</h2>
+            </div>
+            <div class="movie-grid" id="netflixGrid">
+                <!-- Injected via JS -->
+            </div>
+        </div>
+    </section>
 
-                <!-- Language Filter -->
-                <div class="filter-group">
-                    <h4 class="filter-title">Language</h4>
-                    <div class="filter-options" id="languageOptions">
-                        <!-- Dynamic Options -->
-                    </div>
-                </div>
+    <!-- ═══════════════ SECTION 2: INDIA ═══════════════ -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">🇮🇳 Trending in India</h2>
+            </div>
+            <div class="movie-grid" id="indiaGrid">
+                <!-- Injected via JS -->
+            </div>
+        </div>
+    </section>
 
-                <!-- OTT Filter -->
-                <div class="filter-group">
-                    <h4 class="filter-title">Platform</h4>
-                    <div class="filter-options" id="ottOptions">
-                        <!-- Dynamic Options -->
-                    </div>
-                </div>
-
-                <!-- Genre Filter -->
-                <div class="filter-group">
-                    <h4 class="filter-title">Genre</h4>
-                    <div class="filter-options" id="genreOptions">
-                        <!-- Dynamic Options -->
-                    </div>
-                </div>
-
-                <button id="applyFiltersMobile" class="btn btn-primary full-width mobile-only">Apply Filters</button>
-            </aside>
-
-            <!-- Movie Grid Section -->
-            <div class="category-content">
-                <div id="activeTags" class="active-tags"></div>
-                <div class="movie-grid" id="movieGrid">
-                    <!-- Movie cards injected by JS -->
-                </div>
+    <!-- ═══════════════ SECTION 3: OTHER ═══════════════ -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">🎬 Other Noted Trending Films</h2>
+            </div>
+            <div class="movie-grid" id="otherGrid">
+                <!-- Injected via JS -->
             </div>
         </div>
     </section>
@@ -194,7 +176,7 @@
         <script src="https://www.highperformanceformat.com/d4a176b1a9c115fdc04f211d69080bdb/invoke.js"></script>
     </div>
 
-    <script src="/assets/js/category.js" defer></script>
+    <script src="/assets/js/trending.js" defer></script>
 
     <!-- Popunder Ad Script -->
     <script src="https://pl28736066.effectivegatecpm.com/2d/78/8d/2d788dff2e8e4f1c7ca85d04b30b9efb.js"></script>

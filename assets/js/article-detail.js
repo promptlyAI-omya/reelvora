@@ -79,7 +79,7 @@
         if (a.sections && a.sections.length >= 3) {
             for (let i = 0; i < 3; i++) {
                 $(`#section${i + 1}Title`).textContent = a.sections[i].heading;
-                $(`#section${i + 1}Content`).textContent = a.sections[i].content;
+                $(`#section${i + 1}Content`).innerHTML = a.sections[i].content;
             }
         }
 

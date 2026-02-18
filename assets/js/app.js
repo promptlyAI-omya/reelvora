@@ -335,9 +335,33 @@
       // Ad slot after 6th card
       if (index === 5) {
         html += `
-          <div class="ad-slot ad-mid" style="grid-column: 1 / -1;">
-            <!-- Insert mid-content ad script here -->
-            <span class="ad-slot-label">Advertisement</span>
+          <div class="promo-banner-wrapper" style="grid-column: 1 / -1;">
+             <a href="https://www.promptly.help/" target="_blank" class="promo-banner">
+                <div class="promo-header">
+                  <span class="promo-brand">promptly.help</span>
+                  <h2 class="promo-title">Choose Your Engine</h2>
+                </div>
+                <div class="engine-grid">
+                  <div class="engine-card engine-meme">
+                    <span class="engine-icon">🎭</span>
+                    <span class="engine-name">MemeMeter</span>
+                    <span class="engine-desc">Aaj tum kya nikloge? Discover your meme identity.</span>
+                  </div>
+                  <div class="engine-card engine-reply">
+                    <span class="engine-icon">💘</span>
+                    <span class="engine-name">ReplyMeter</span>
+                    <span class="engine-desc">Will your crush reply? Check now.</span>
+                  </div>
+                  <div class="engine-card engine-next">
+                    <span class="engine-icon">🔮</span>
+                    <span class="engine-name">Next30</span>
+                    <span class="engine-desc">What's silently shifting? Find out.</span>
+                  </div>
+                </div>
+                <div class="promo-footer">
+                  promptly/mememeter.help — Identity Engine Platform
+                </div>
+             </a>
           </div>
         `;
       }
