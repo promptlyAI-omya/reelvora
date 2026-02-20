@@ -90,46 +90,72 @@
         </p>
     </div>
 
+    <!-- ═══════════════ PREMIUM FILTER BAR ═══════════════ -->
+    <div class="filter-engine" id="filterEngine">
+        <div class="container filter-container">
+
+            <!-- Filter Toggles Group -->
+            <div class="filter-scroll-wrapper">
+                <div class="filter-toggles">
+                    <button class="filter-toggle-btn active" data-target="languageOptions">Languages <span class="badge"
+                            id="languageBadge" style="display:none">0</span></button>
+                    <button class="filter-toggle-btn" data-target="ottOptions">Platforms <span class="badge"
+                            id="ottBadge" style="display:none">0</span></button>
+                    <button class="filter-toggle-btn" data-target="sortOptions">Sort</button>
+                </div>
+            </div>
+
+            <!-- Active Filter Panels -->
+            <div class="filter-panels">
+
+                <!-- Language Chips -->
+                <div class="filter-panel active" id="languageOptions">
+                    <div class="filter-chip-grid" id="languageGrid">
+                        <!-- Dynamic language chips injected via JS -->
+                    </div>
+                </div>
+
+                <!-- OTT Logo Cards -->
+                <div class="filter-panel" id="ottOptions">
+                    <div class="filter-ott-grid" id="ottGrid">
+                        <!-- Dynamic OTT logos injected via JS -->
+                    </div>
+                </div>
+
+                <!-- Sort Dropdown/Chips -->
+                <div class="filter-panel" id="sortOptions">
+                    <div class="filter-chip-grid">
+                        <label class="sort-chip active">
+                            <input type="radio" name="sort" value="trending" checked> Trending
+                        </label>
+                        <label class="sort-chip">
+                            <input type="radio" name="sort" value="rating_desc"> Highest Rated
+                        </label>
+                        <label class="sort-chip">
+                            <input type="radio" name="sort" value="newest"> Newest Releases
+                        </label>
+                        <label class="sort-chip">
+                            <input type="radio" name="sort" value="title_asc"> A-Z
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="filter-actions" style="justify-content: space-between; align-items: center; width: 100%;">
+                <button id="resetFilters" class="btn-text" style="color:var(--text-muted);font-size:0.9rem;">Clear
+                    All</button>
+                <button id="applyFiltersBtn" class="btn btn-primary" style="padding: 8px 24px; font-size: 0.9rem;">Apply
+                    Filters</button>
+            </div>
+        </div>
+    </div>
+
     <!-- ═══════════════ MOVIE GRID ═══════════════ -->
     <section class="section">
-        <div class="category-layout">
-            <!-- Filter Sidebar -->
-            <aside class="filter-sidebar" id="filterSidebar">
-                <div class="filter-header">
-                    <h3>Filters</h3>
-                    <button id="resetFilters" class="btn-text">Reset</button>
-                </div>
-
-                <!-- Language Filter -->
-                <div class="filter-group">
-                    <h4 class="filter-title">Language</h4>
-                    <div class="filter-options" id="languageOptions">
-                        <!-- Dynamic Options -->
-                    </div>
-                </div>
-
-                <!-- OTT Filter -->
-                <div class="filter-group">
-                    <h4 class="filter-title">Platform</h4>
-                    <div class="filter-options" id="ottOptions">
-                        <!-- Dynamic Options -->
-                    </div>
-                </div>
-
-                <!-- Genre Filter -->
-                <div class="filter-group">
-                    <h4 class="filter-title">Genre</h4>
-                    <div class="filter-options" id="genreOptions">
-                        <!-- Dynamic Options -->
-                    </div>
-                </div>
-
-                <button id="applyFiltersMobile" class="btn btn-primary full-width mobile-only">Apply Filters</button>
-            </aside>
-
-            <!-- Movie Grid Section -->
+        <div class="container">
             <div class="category-content">
-                <div id="activeTags" class="active-tags"></div>
+                <div class="active-tags" id="activeTags" style="display:none;"></div>
                 <div class="movie-grid" id="movieGrid">
                     <!-- Movie cards injected by JS -->
                 </div>

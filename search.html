@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results | Reelvora</title>
+    <meta name="description" content="Search results for movies on Reelvora.">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="dark-theme">
+
+    <!-- ================= HEADER ================= -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="/index.html" class="logo" aria-label="Reelvora Home">
+                <span class="logo-icon">🎬</span>
+                <span class="logo-text">Reel<span class="gradient-text">vora</span></span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-links" id="navLinks">
+                <a href="/index.html">Home</a>
+                <a href="/category/genre.html?genre=Action">Action</a>
+                <a href="/category/genre.html?genre=Horror">Horror</a>
+                <a href="/category/genre.html?genre=Sci-Fi">Sci-Fi</a>
+                <a href="/category/genre.html?genre=Comedy">Comedy</a>
+            </nav>
+
+            <!-- Desktop Search Toggle -->
+            <button class="icon-btn search-toggle" id="searchBtn" aria-label="Toggle search">
+                🔍
+            </button>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+
+        <!-- Dropdown Search Bar -->
+        <div class="nav-search" id="navSearch">
+            <div class="container">
+                <input type="text" id="searchInput" placeholder="Search movies, genres, actors..." autocomplete="off">
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= SEARCH OVERLAY ================= -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="container">
+            <div class="search-results-grid" id="searchResults">
+                <!-- Live search suggestions injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="page-content" style="padding-top: var(--nav-height);">
+        <!-- Page Header -->
+        <section class="page-header container">
+            <div class="page-header-content animate-on-scroll">
+                <div class="breadcrumb">
+                    <a href="/index.html">Home</a> / <span class="current">Search</span>
+                </div>
+                <h1 class="page-title" id="searchTitle">Search Results</h1>
+                <p class="page-subtitle" id="searchCount">Searching...</p>
+            </div>
+        </section>
+
+        <!-- Search Input Form (Inline for the search page) -->
+        <section class="container" style="margin-bottom: var(--space-2xl);">
+            <form id="fullSearchForm" class="full-search-form animate-on-scroll"
+                style="display: flex; gap: 10px; max-width: 600px; margin: 0 auto;">
+                <input type="text" id="fullSearchInput" placeholder="Search TMDB for movies..."
+                    style="flex: 1; padding: 12px 20px; border-radius: 30px; border: 1px solid var(--border-glass); background: var(--bg-glass); color: var(--text-primary); backdrop-filter: blur(10px);">
+                <button type="submit" class="btn btn-primary" style="border-radius: 30px;">Search</button>
+            </form>
+        </section>
+
+        <!-- Results Grid -->
+        <section class="container">
+            <div class="movie-grid" id="fullSearchGrid">
+                <!-- TMDB results injected here -->
+                <div class="loader-ring" style="width: 40px; height: 40px; margin: 4rem auto; grid-column: 1/-1;"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span class="logo-icon">🎬</span>
+                    <span class="logo-text">Reel<span class="gradient-text">vora</span></span>
+                </div>
+                <p class="footer-desc">Your ultimate cinematic universe. Discover, track, and share the movies that move
+                    you.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <a href="/trending/index.html">Trending</a>
+                <a href="/category/genre.html?genre=Action">Top Action</a>
+                <a href="/category/genre.html?genre=Sci-Fi">Sci-Fi Universe</a>
+                <a href="/category/genre.html?genre=Horror">Horror Nights</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <a href="/terms.html">Terms of Service</a>
+                <a href="/privacy-policy.html">Privacy Policy</a>
+                <a href="/docs/cookie-policy.html">Cookie Policy</a>
+                <a href="/docs/dmca.html">DMCA</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container flex-between">
+                <p>&copy; 2026 Reelvora. All cinematic rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Twitter">𝕏</a>
+                    <a href="#" aria-label="Instagram">📸</a>
+                    <a href="#" aria-label="Discord">👾</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/search.js"></script>
+</body>
+
+</html>

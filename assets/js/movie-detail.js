@@ -32,18 +32,26 @@
 
     async function loadMovieData() {
         try {
-            const response = await fetch('/data/movies.json');
-            if (!response.ok) throw new Error('Failed to fetch movies');
-            allMovies = await response.json();
-
-            // Get slug from URL
+            // Get params from URL
             const params = new URLSearchParams(window.location.search);
             const slug = params.get('slug');
+            const tmdbId = params.get('tmdb_id');
+
+            if (tmdbId) {
+                // Fetch dynamically from TMDB via our backend wrapper
+                await fetchTMDBMovie(tmdbId);
+                return;
+            }
 
             if (!slug) {
                 window.location.href = '/';
                 return;
             }
+
+            // Fallback to local movies.json
+            const response = await fetch('/data/movies.json');
+            if (!response.ok) throw new Error('Failed to fetch movies');
+            allMovies = await response.json();
 
             currentMovie = allMovies.find(m => m.slug === slug);
 
@@ -62,6 +70,74 @@
         } catch (error) {
             console.error('Error loading movie:', error);
             $('#movieTitle').textContent = 'Movie not found';
+            hideLoadingScreen();
+        }
+    }
+
+    async function fetchTMDBMovie(tmdbId) {
+        try {
+            const res = await fetch(`/api/movie?id=${tmdbId}`);
+            if (!res.ok) throw new Error('Failed to fetch TMDB movie details');
+
+            const m = await res.json();
+
+            // Map TMDB response to our internal currentMovie format
+            currentMovie = {
+                title: m.title,
+                year: m.release_date ? m.release_date.split('-')[0] : 'N/A',
+                rating: m.vote_average ? m.vote_average.toFixed(1) : 'NR',
+                duration: m.runtime ? `${Math.floor(m.runtime / 60)}h ${m.runtime % 60}m` : 'N/A',
+                genre: m.genres && m.genres.length > 0 ? m.genres.map(g => g.name).join(', ') : 'TMDB Movie',
+                language: m.original_language ? m.original_language.toUpperCase() : 'EN',
+                description: m.overview || 'No description available for this title.',
+                poster: m.poster_path ? `https://image.tmdb.org/t/p/w500${m.poster_path}` : '/assets/images/placeholder-poster.webp',
+                trailer: null, // Basic extraction won't have the fully parsed trailer without standardizing the backend response
+                platforms: [], // Can't easily get platforms without standardizing the backend response
+                slug: `tmdb-${tmdbId}`,
+                tags: []
+            };
+
+            // If backend provides videos, grab the first YouTube one
+            if (m.videos && m.videos.results) {
+                const ytVideo = m.videos.results.find(v => v.site === 'YouTube' && v.type === 'Trailer') ||
+                    m.videos.results.find(v => v.site === 'YouTube');
+                if (ytVideo) {
+                    currentMovie.trailer = `https://www.youtube.com/embed/${ytVideo.key}`;
+                }
+            }
+
+            // If backend provides watch providers (US locale by default)
+            if (m['watch/providers'] && m['watch/providers'].results && m['watch/providers'].results.IN) {
+                const providers = m['watch/providers'].results.IN;
+                const flatres = [...(providers.flatrate || []), ...(providers.rent || []), ...(providers.buy || [])];
+
+                // Deduplicate platform names
+                const uniqueNames = [...new Set(flatres.map(p => p.provider_name))];
+
+                currentMovie.platforms = uniqueNames;
+                currentMovie.providers = uniqueNames.map(name => ({
+                    name: name,
+                    type: 'Watch',
+                    link: providers.link || '#'
+                }));
+            }
+
+            renderMovieDetail();
+
+            // We skip related movies for TMDB dynamic pages because we don't have the full local DB loaded
+            const relatedSection = $('#relatedGrid')?.closest('section');
+            if (relatedSection) relatedSection.style.display = 'none';
+
+            setupPosterTilt();
+            injectSchemaMarkup();
+            updateSEOMeta();
+            lazyLoadTrailer();
+            hideLoadingScreen();
+
+        } catch (error) {
+            console.error('Error in dynamic TMDB movie load:', error);
+            $('#movieTitle').textContent = 'Movie not found';
+            hideLoadingScreen();
         }
     }
 
@@ -79,8 +155,21 @@
         // Info Grid
         $('#movieYear').textContent = m.year;
         $('#movieGenre').textContent = m.genre;
+        if ($('#movieLanguage')) $('#movieLanguage').textContent = m.language || 'EN';
         $('#movieDuration').textContent = m.duration;
         $('#movieImdb').textContent = m.rating + ' / 10';
+
+        // Badges
+        const heroLanguageBadge = $('#heroLanguageBadge');
+        if (heroLanguageBadge && m.language) {
+            heroLanguageBadge.textContent = m.language;
+            heroLanguageBadge.style.display = 'block';
+        }
+        const heroGenreBadge = $('#heroGenreBadge');
+        if (heroGenreBadge && m.tags && m.tags.includes('Action')) {
+            heroGenreBadge.textContent = 'ACTION';
+            heroGenreBadge.style.display = 'block';
+        }
 
         // Description
         $('#movieDescription').textContent = m.description;
@@ -133,11 +222,9 @@
 
         if (displayList.length === 0) {
             grid.innerHTML = `
-        <div class="platforms-empty">
-            <a href="https://www.google.com/search?q=watch+${encodeURIComponent(currentMovie.title)}+online" class="affiliate-btn btn-check-availability" rel="nofollow sponsored" target="_blank">
-                <span>🔎</span> Check Availability
-            </a>
-            <p class="platform-note">Streaming availability may vary by region.</p>
+        <div class="platforms-empty" style="text-align: center; width: 100%;">
+            <p style="font-size: 1.1rem; color: #aaa; margin-bottom: 0.5rem;">Streaming availability not available.</p>
+            <p class="platform-note" style="font-size: 0.8rem; opacity: 0.7;">Streaming availability may vary by region.</p>
         </div>
       `;
             return;
@@ -251,13 +338,13 @@
     function renderRelatedMovies() {
         const related = allMovies
             .filter(m => m.genre === currentMovie.genre && m.slug !== currentMovie.slug)
-            .slice(0, 4);
+            .slice(0, 3);
 
-        // If less than 4 in same genre, add from other genres
-        if (related.length < 4) {
+        // If less than 3 in same genre, add from other genres
+        if (related.length < 3) {
             const extras = allMovies
                 .filter(m => m.slug !== currentMovie.slug && !related.includes(m))
-                .slice(0, 4 - related.length);
+                .slice(0, 3 - related.length);
             related.push(...extras);
         }
 
@@ -293,9 +380,9 @@
 
     function updateSEOMeta() {
         const m = currentMovie;
-        document.title = `${m.title} (${m.year}) – Watch Trailer & Stream | Reelvora`;
+        document.title = `${m.title} (${m.year}) – Watch & Streaming Info | Reelvora`;
 
-        setMeta('description', m.description.substring(0, 160));
+        setMeta('description', m.description.substring(0, 155));
         setMeta('og:title', `${m.title} (${m.year}) – Reelvora`);
         setMeta('og:description', m.description.substring(0, 200));
         setMeta('og:image', m.poster);
@@ -375,7 +462,7 @@
     }
 
     // ═══════════════════════════════════════════════
-    // SEARCH (same as homepage)
+    // SEARCH
     // ═══════════════════════════════════════════════
 
     function setupSearch() {
@@ -384,6 +471,9 @@
         const searchInput = $('#searchInput');
         const searchOverlay = $('#searchOverlay');
         const searchResults = $('#searchResults');
+
+        // Live Search Auto-Suggest Variables
+        let searchTimeout = null;
 
         searchBtn?.addEventListener('click', () => {
             navSearch.classList.toggle('active');
@@ -395,36 +485,49 @@
             }
         });
 
+        // Real-time API search
         searchInput?.addEventListener('input', (e) => {
-            const query = e.target.value.trim().toLowerCase();
+            const query = e.target.value.trim();
+
             if (query.length < 2) {
                 searchOverlay.classList.remove('active');
+                clearTimeout(searchTimeout);
                 return;
             }
 
-            const results = allMovies.filter(m =>
-                m.title.toLowerCase().includes(query) ||
-                m.genre.toLowerCase().includes(query)
-            );
+            // Debounce API calls (300ms)
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(async () => {
+                try {
+                    searchOverlay.classList.add('active');
+                    searchResults.innerHTML = '<div class="loader-ring" style="width: 30px; height: 30px; margin: 2rem auto;"></div>';
 
-            searchOverlay.classList.add('active');
+                    // Fetch from our secure Vercel API
+                    const response = await fetch(`/api/search?q=${encodeURIComponent(query)}`);
+                    if (!response.ok) throw new Error('Search failed');
 
-            if (results.length === 0) {
-                searchResults.innerHTML = '<div class="search-no-results">No movies found</div>';
-            } else {
-                searchResults.innerHTML = results.map(m => `
-          <article class="movie-card">
-            <a href="/movies/movie.html?slug=${m.slug}">
-              <div class="movie-card-poster">
-                <img src="${m.poster}" alt="${escapeHTML(m.title)}" loading="lazy" width="220" height="330">
-                <span class="movie-card-rating">⭐ ${m.rating}</span>
-              </div>
-              <div class="movie-card-info">
-                <h3 class="movie-card-title">${escapeHTML(m.title)}</h3>
-              </div>
-            </a>
-          </article>
-        `).join('');
+                    const data = await response.json();
+                    const results = data.results?.slice(0, 5) || [];
+
+                    if (results.length === 0) {
+                        searchResults.innerHTML = '<div class="search-no-results">No movies found. Try another keyword.</div>';
+                    } else {
+                        searchResults.innerHTML = results.map(m => createSuggestCardHTML(m)).join('');
+                    }
+                } catch (error) {
+                    console.error('Search error:', error);
+                    searchResults.innerHTML = '<div class="search-no-results" style="color:var(--cta-red);">Error fetching results.</div>';
+                }
+            }, 300);
+        });
+
+        // Press Enter to go to full results page
+        searchInput?.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                const query = searchInput.value.trim();
+                if (query.length >= 2) {
+                    window.location.href = `/search.html?q=${encodeURIComponent(query)}`;
+                }
             }
         });
 
@@ -432,8 +535,31 @@
             if (e.key === 'Escape') {
                 navSearch?.classList.remove('active');
                 searchOverlay?.classList.remove('active');
+                searchInput.value = '';
             }
         });
+    }
+
+    function createSuggestCardHTML(tmdbMovie) {
+        const posterUrl = tmdbMovie.poster_path
+            ? `https://image.tmdb.org/t/p/w200${tmdbMovie.poster_path}`
+            : '/assets/images/placeholder-poster.webp';
+
+        const year = tmdbMovie.release_date ? tmdbMovie.release_date.split('-')[0] : 'N/A';
+        const rating = tmdbMovie.vote_average ? tmdbMovie.vote_average.toFixed(1) : 'NR';
+
+        return `
+          <a href="/movies/movie.html?tmdb_id=${tmdbMovie.id}" class="suggest-card" aria-label="View ${escapeHTML(tmdbMovie.title)}">
+            <img src="${posterUrl}" alt="${escapeHTML(tmdbMovie.title)} poster" class="suggest-poster" loading="lazy">
+            <div class="suggest-info">
+              <h4 class="suggest-title">${escapeHTML(tmdbMovie.title)}</h4>
+              <div class="suggest-meta">
+                <span class="suggest-year">${year}</span>
+                <span class="suggest-rating">⭐ ${rating}</span>
+              </div>
+            </div>
+          </a>
+        `;
     }
 
     // ═══════════════════════════════════════════════

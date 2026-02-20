@@ -102,8 +102,19 @@
                 <!-- Movie Info -->
                 <div class="movie-detail-info">
                     <h1 class="movie-detail-title" id="movieTitle">Loading...</h1>
-                    <div class="movie-rating-badge" id="movieRating">
-                        ⭐ <span id="ratingValue">—</span> / 10
+                    <div class="movie-badges-container"
+                        style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; align-items: center;">
+                        <div class="movie-rating-badge" id="movieRating" style="margin-bottom: 0;">
+                            ⭐ <span id="ratingValue">—</span> / 10
+                        </div>
+                        <div class="movie-genre-badge" id="heroGenreBadge"
+                            style="display: none; background: rgba(138, 43, 226, 0.2); color: #b366ff; padding: 0.4rem 0.8rem; border-radius: 4px; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px; border: 1px solid rgba(138, 43, 226, 0.3);">
+                            ACTION
+                        </div>
+                        <div class="movie-language-badge" id="heroLanguageBadge"
+                            style="display: none; background: rgba(255, 255, 255, 0.1); color: #fff; padding: 0.4rem 0.8rem; border-radius: 4px; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px; border: 1px solid rgba(255, 255, 255, 0.2);">
+                            EN
+                        </div>
                     </div>
 
                     <!-- Info Grid -->
@@ -115,6 +126,10 @@
                         <div class="movie-info-item">
                             <label>Genre</label>
                             <span id="movieGenre">—</span>
+                        </div>
+                        <div class="movie-info-item">
+                            <label>Language</label>
+                            <span id="movieLanguage">—</span>
                         </div>
                         <div class="movie-info-item">
                             <label>Duration</label>

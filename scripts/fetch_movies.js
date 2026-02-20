@@ -11,6 +11,18 @@ const POSTERS_DIR = path.join(__dirname, '../assets/images/posters');
 
 // Categorized Movie Lists
 const CATEGORIES = {
+    ACTION: [
+        { name: "Kill", year: 2023, tags: ['Action', 'India'] },
+        { name: "Dhurandhar", year: 2025, tags: ['Action', 'India'] },
+        { name: "Controll", year: 2025, tags: ['Action', 'India'] },
+        { name: "Ek Tha Tiger", year: 2012, tags: ['Action', 'India'] },
+        { name: "Singham", year: 2011, tags: ['Action', 'India'] },
+        { name: "Krrish", year: 2006, tags: ['Action', 'India'] },
+        { name: "Wanted", year: 2009, tags: ['Action', 'India'] },
+        { name: "Rowdy Rathore", year: 2012, tags: ['Action', 'India'] },
+        { name: "Dhoom", year: 2004, tags: ['Action', 'India'] },
+        { name: "Ghajini", year: 2008, tags: ['Action', 'India'] }
+    ],
     NETFLIX: [
         { name: "Joe's College Road Trip", year: 2025, tags: ['Netflix', 'Trending'] }, // Assuming name
         { name: "How to Train Your Dragon", year: 2025, tags: ['Netflix', 'Trending'] }, // Live Action
@@ -45,6 +57,7 @@ const CATEGORIES = {
 
 // Flatten list for processing
 const ALL_TARGETS = [
+    ...CATEGORIES.ACTION.map(m => ({ ...m, category: 'Action' })),
     ...CATEGORIES.NETFLIX.map(m => ({ ...m, category: 'Netflix' })),
     ...CATEGORIES.INDIA.map(m => ({ ...m, category: 'India' })),
     ...CATEGORIES.OTHER.map(m => ({ ...m, category: 'Other' })),
@@ -224,8 +237,18 @@ async function processMovies() {
         // Let's keep `tags` strictly for our categorization logic.
 
         let finalTags = [...target.tags];
+        if (details.popularity && details.popularity > 50) {
+            finalTags.push('Trending');
+        }
         // Ensure unique
         finalTags = [...new Set(finalTags)];
+
+        const wordLimit = (str, limit) => {
+            if (!str) return '';
+            const words = str.split(/\s+/);
+            return words.length > limit ? words.slice(0, limit).join(' ') + '...' : str;
+        };
+        const descriptionShort = wordLimit(details.overview, 250);
 
         const movieData = {
             id: null, // assigned below
@@ -240,7 +263,7 @@ async function processMovies() {
             duration: details.runtime ? `${Math.floor(details.runtime / 60)}h ${details.runtime % 60}m` : 'TBA',
             poster: posterLocalPath || details.poster_path,
             trailer: getYouTubeTrailer(details.videos),
-            description: details.overview,
+            description: descriptionShort,
             platforms: providers.map(p => p.name).slice(0, 2), // Keep for legacy/UI display summaries
             providers: providers, // Full structured data
             language: details.original_language.toUpperCase(),

@@ -151,6 +151,9 @@
     const searchOverlay = $('#searchOverlay');
     const searchResults = $('#searchResults');
 
+    // Live Search Auto-Suggest Variables
+    let searchTimeout = null;
+
     // Toggle search bar
     searchBtn?.addEventListener('click', () => {
       navSearch.classList.toggle('active');
@@ -162,28 +165,49 @@
       }
     });
 
-    // Real-time search
+    // Real-time API search
     searchInput?.addEventListener('input', (e) => {
-      const query = e.target.value.trim().toLowerCase();
+      const query = e.target.value.trim();
 
       if (query.length < 2) {
         searchOverlay.classList.remove('active');
+        clearTimeout(searchTimeout);
         return;
       }
 
-      const results = allMovies.filter(m =>
-        m.title.toLowerCase().includes(query) ||
-        m.genre.toLowerCase().includes(query) ||
-        m.description.toLowerCase().includes(query)
-      );
+      // Debounce API calls (300ms)
+      clearTimeout(searchTimeout);
+      searchTimeout = setTimeout(async () => {
+        try {
+          searchOverlay.classList.add('active');
+          searchResults.innerHTML = '<div class="loader-ring" style="width: 30px; height: 30px; margin: 2rem auto;"></div>';
 
-      searchOverlay.classList.add('active');
+          // Fetch from our secure Vercel API
+          const response = await fetch(`/api/search?q=${encodeURIComponent(query)}`);
+          if (!response.ok) throw new Error('Search failed');
 
-      if (results.length === 0) {
-        searchResults.innerHTML = '<div class="search-no-results">No movies found for "' + escapeHTML(query) + '"</div>';
-      } else {
-        searchResults.innerHTML = results.map(m => createMovieCardHTML(m)).join('');
-        setupTiltEffects(searchResults);
+          const data = await response.json();
+          const results = data.results?.slice(0, 5) || [];
+
+          if (results.length === 0) {
+            searchResults.innerHTML = '<div class="search-no-results">No movies found. Try another keyword.</div>';
+          } else {
+            searchResults.innerHTML = results.map(m => createSuggestCardHTML(m)).join('');
+          }
+        } catch (error) {
+          console.error('Search error:', error);
+          searchResults.innerHTML = '<div class="search-no-results" style="color:var(--cta-red);">Error fetching results.</div>';
+        }
+      }, 300);
+    });
+
+    // Press Enter to go to full results page
+    searchInput?.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        const query = searchInput.value.trim();
+        if (query.length >= 2) {
+          window.location.href = `/search.html?q=${encodeURIComponent(query)}`;
+        }
       }
     });
 
@@ -195,6 +219,28 @@
         searchInput.value = '';
       }
     });
+  }
+
+  function createSuggestCardHTML(tmdbMovie) {
+    const posterUrl = tmdbMovie.poster_path
+      ? `https://image.tmdb.org/t/p/w200${tmdbMovie.poster_path}`
+      : '/assets/images/placeholder-poster.webp';
+
+    const year = tmdbMovie.release_date ? tmdbMovie.release_date.split('-')[0] : 'N/A';
+    const rating = tmdbMovie.vote_average ? tmdbMovie.vote_average.toFixed(1) : 'NR';
+
+    return `
+      <a href="/movies/movie.html?tmdb_id=${tmdbMovie.id}" class="suggest-card" aria-label="View ${escapeHTML(tmdbMovie.title)}">
+        <img src="${posterUrl}" alt="${escapeHTML(tmdbMovie.title)} poster" class="suggest-poster" loading="lazy">
+        <div class="suggest-info">
+          <h4 class="suggest-title">${escapeHTML(tmdbMovie.title)}</h4>
+          <div class="suggest-meta">
+            <span class="suggest-year">${year}</span>
+            <span class="suggest-rating">⭐ ${rating}</span>
+          </div>
+        </div>
+      </a>
+    `;
   }
 
   // ═══════════════════════════════════════════════
@@ -235,7 +281,7 @@
       const rect = heroCard.getBoundingClientRect();
       const x = (e.clientX - rect.left) / rect.width - 0.5;
       const y = (e.clientY - rect.top) / rect.height - 0.5;
-      heroCard.style.transform = `rotateY(${x * 20}deg) rotateX(${-y * 20}deg)`;
+      heroCard.style.transform = `rotateY(${x * 20}deg) rotateX(${- y * 20}deg)`;
     });
 
     heroCard?.addEventListener('mouseleave', () => {
@@ -297,9 +343,15 @@
     const filterBar = $('#filterBar');
 
     filterBar.innerHTML = `
-      <button class="filter-btn active" data-genre="all">All</button>
-      ${genres.map(g => `<button class="filter-btn" data-genre="${g}">${g}</button>`).join('')}
-    `;
+    <button class="filter-btn active" data-genre="all">
+      <span class="filter-icon">🍿</span> All Movies
+    </button>
+    ${genres.map(g => `
+        <button class="filter-btn" data-genre="${g}">
+          <span class="filter-icon">${genreIcons[g] || '🏷️'}</span> ${g}
+        </button>`).join('')
+      }
+  `;
 
     filterBar.querySelectorAll('.filter-btn').forEach(btn => {
       btn.addEventListener('click', () => {
@@ -335,35 +387,35 @@
       // Ad slot after 6th card
       if (index === 5) {
         html += `
-          <div class="promo-banner-wrapper" style="grid-column: 1 / -1;">
-             <a href="https://www.promptly.help/" target="_blank" class="promo-banner">
-                <div class="promo-header">
-                  <span class="promo-brand">promptly.help</span>
-                  <h2 class="promo-title">Choose Your Engine</h2>
-                </div>
-                <div class="engine-grid">
-                  <div class="engine-card engine-meme">
-                    <span class="engine-icon">🎭</span>
-                    <span class="engine-name">MemeMeter</span>
-                    <span class="engine-desc">Aaj tum kya nikloge? Discover your meme identity.</span>
-                  </div>
-                  <div class="engine-card engine-reply">
-                    <span class="engine-icon">💘</span>
-                    <span class="engine-name">ReplyMeter</span>
-                    <span class="engine-desc">Will your crush reply? Check now.</span>
-                  </div>
-                  <div class="engine-card engine-next">
-                    <span class="engine-icon">🔮</span>
-                    <span class="engine-name">Next30</span>
-                    <span class="engine-desc">What's silently shifting? Find out.</span>
-                  </div>
-                </div>
-                <div class="promo-footer">
-                  promptly/mememeter.help — Identity Engine Platform
-                </div>
-             </a>
+    <div class="promo-banner-wrapper" style="grid-column: 1 / -1;">
+      <a href="https://www.promptly.help/" target="_blank" rel="noopener" class="promo-banner">
+        <div class="promo-header">
+          <span class="promo-brand">promptly.help</span>
+          <h2 class="promo-title">Choose Your Engine</h2>
+        </div>
+        <div class="engine-grid">
+          <div class="engine-card engine-meme">
+            <span class="engine-icon">🎭</span>
+            <span class="engine-name">MemeMeter</span>
+            <span class="engine-desc">Aaj tum kya nikloge? Discover your meme identity.</span>
           </div>
-        `;
+          <div class="engine-card engine-reply">
+            <span class="engine-icon">💘</span>
+            <span class="engine-name">ReplyMeter</span>
+            <span class="engine-desc">Will your crush reply? Check now.</span>
+          </div>
+          <div class="engine-card engine-next">
+            <span class="engine-icon">🔮</span>
+            <span class="engine-name">Next30</span>
+            <span class="engine-desc">What's silently shifting? Find out.</span>
+          </div>
+        </div>
+        <div class="promo-footer">
+          promptly/mememeter.help — Identity Engine Platform
+        </div>
+      </a>
+    </div>
+    `;
       }
     });
 
@@ -374,28 +426,33 @@
 
     // Setup lazy loading
     setupLazyLoading();
+
+    // Re-initialize scroll animations for newly injected cards
+    if (typeof setupScrollAnimations === 'function') {
+      setupScrollAnimations();
+    }
   }
 
   function createMovieCardHTML(movie) {
     return `
-      <article class="movie-card animate-on-scroll" data-slug="${movie.slug}">
-        <a href="/movies/movie.html?slug=${movie.slug}" aria-label="View ${escapeHTML(movie.title)}">
-          <div class="movie-card-poster">
-            <img src="${movie.poster}" alt="${escapeHTML(movie.title)} poster" loading="lazy" width="220" height="330">
+    <article class="movie-card animate-on-scroll" data-slug="${movie.slug}">
+      <a href="/movies/movie.html?slug=${movie.slug}" aria-label="View ${escapeHTML(movie.title)}">
+        <div class="movie-card-poster">
+          <img src="${movie.poster}" alt="${escapeHTML(movie.title)} poster" loading="lazy" width="220" height="330">
             <span class="movie-card-rating">⭐ ${movie.rating}</span>
             <span class="movie-card-genre">${escapeHTML(movie.genre)}</span>
             <div class="movie-card-play">▶</div>
+        </div>
+        <div class="movie-card-info">
+          <h3 class="movie-card-title">${escapeHTML(movie.title)}</h3>
+          <div class="movie-card-meta">
+            <span>${movie.year}</span>
+            <span>•</span>
+            <span>${movie.duration}</span>
           </div>
-          <div class="movie-card-info">
-            <h3 class="movie-card-title">${escapeHTML(movie.title)}</h3>
-            <div class="movie-card-meta">
-              <span>${movie.year}</span>
-              <span>•</span>
-              <span>${movie.duration}</span>
-            </div>
-          </div>
-        </a>
-      </article>
+        </div>
+      </a>
+    </article>
     `;
   }
 
@@ -410,12 +467,12 @@
     grid.innerHTML = genres.map(genre => {
       const count = allMovies.filter(m => m.genre === genre).length;
       return `
-        <a href="/category/genre.html?genre=${genre}" class="genre-card animate-on-scroll">
+    <a href="/category/genre.html?genre=${genre}" class="genre-card animate-on-scroll">
           <div class="genre-card-icon">${genreIcons[genre] || '🎬'}</div>
           <div class="genre-card-name">${genre}</div>
           <div class="genre-card-count">${count} movie${count !== 1 ? 's' : ''}</div>
         </a>
-      `;
+    `;
     }).join('');
   }
 
@@ -433,11 +490,11 @@
         const y = (e.clientY - rect.top) / rect.height - 0.5;
 
         card.style.transform = `
-          perspective(800px)
-          rotateY(${x * 10}deg)
-          rotateX(${-y * 10}deg)
-          scale(1.05)
-        `;
+  perspective(800px)
+  rotateY(${x * 10}deg)
+  rotateX(${- y * 10}deg)
+scale(1.05)
+  `;
       });
 
       card.addEventListener('mouseleave', () => {

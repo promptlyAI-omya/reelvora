@@ -414,9 +414,8 @@
     "genre": "Action",
     "genres": [
       "Action",
-      "Thriller",
       "Crime",
-      "Adventure"
+      "Thriller"
     ],
     "rating": "6.9",
     "duration": "3h 32m",
@@ -438,7 +437,8 @@
     "tags": [
       "Netflix",
       "India",
-      "Trending"
+      "Trending",
+      "Action"
     ],
     "featured": true
   },
@@ -788,5 +788,428 @@
       "Horror"
     ],
     "featured": true
+  },
+  {
+    "id": 34,
+    "title": "Controll",
+    "slug": "controll",
+    "year": 2025,
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
+    "rating": "N/A",
+    "duration": "1h 56m",
+    "poster": "/assets/images/posters/controll.webp",
+    "trailer": "https://www.youtube.com/embed/1GEdtPL6Vnc",
+    "description": "Abhimanyu, a brilliant IMA cadet's seemingly perfect life is shattered when his friend cum brother-in-law commits suicide. Abhimanyu wants to find out who or what drove Dev to suicide, but the more he tries to find out, the more he gets trapped in the intricate web. He learns that Dev was scammed by an organised network. He vows to unmask the organisation that had trapped and scammed Dev. How Abhimanyu and his IMA friends dismantle the scammer's network and bring justice to thousands of people forms the rest of this stylish, action-packed, thrilling adventure.",
+    "platforms": [],
+    "providers": [],
+    "language": "HI",
+    "tags": [
+      "Action",
+      "India"
+    ],
+    "featured": false
+  },
+  {
+    "id": 35,
+    "title": "Ek Tha Tiger",
+    "slug": "ek-tha-tiger",
+    "year": 2012,
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Romance"
+    ],
+    "rating": "6.2",
+    "duration": "2h 13m",
+    "poster": "/assets/images/posters/ek-tha-tiger.webp",
+    "trailer": "https://www.youtube.com/embed/yqz5WTJMLEw",
+    "description": "A top Indian agent is sent to observe the actions of a scientist but the mission complicates when he falls in love with the scientist's Pakistani caretaker.",
+    "platforms": [
+      "Netflix",
+      "Apple TV Store"
+    ],
+    "providers": [
+      {
+        "name": "Netflix",
+        "type": "Stream",
+        "link": "https://www.netflix.com/search?q=Ek%20Tha%20Tiger",
+        "logo": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+      },
+      {
+        "name": "Apple TV Store",
+        "type": "Rent",
+        "link": "https://tv.apple.com/search?term=Ek%20Tha%20Tiger",
+        "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+      },
+      {
+        "name": "Google Play Movies",
+        "type": "Rent",
+        "link": "https://www.themoviedb.org/movie/85985/watch?locale=IN",
+        "logo": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg"
+      },
+      {
+        "name": "YouTube",
+        "type": "Rent",
+        "link": "https://www.youtube.com/results?search_query=Ek%20Tha%20Tiger",
+        "logo": "/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg"
+      }
+    ],
+    "language": "HI",
+    "tags": [
+      "Action",
+      "India"
+    ],
+    "featured": false
+  },
+  {
+    "id": 36,
+    "title": "Singham",
+    "slug": "singham",
+    "year": 2011,
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Action",
+      "Crime"
+    ],
+    "rating": "6.5",
+    "duration": "2h 23m",
+    "poster": "/assets/images/posters/singham.webp",
+    "trailer": "https://www.youtube.com/embed/mp-XqCrCi6I",
+    "description": "An honest, small town cop is transferred to a big city that is controlled by a crime boss that he had once humiliated.",
+    "platforms": [
+      "Amazon Prime Video",
+      "Lionsgate Play"
+    ],
+    "providers": [
+      {
+        "name": "Amazon Prime Video",
+        "type": "Stream",
+        "link": "https://www.amazon.in/s?k=Singham&i=instant-video",
+        "logo": "/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
+      },
+      {
+        "name": "Lionsgate Play",
+        "type": "Stream",
+        "link": "https://www.themoviedb.org/movie/70590/watch?locale=IN",
+        "logo": "/e2hCUg2Z3sJ6yWF9NLU24SIKeWa.jpg"
+      },
+      {
+        "name": "VI movies and tv",
+        "type": "Stream",
+        "link": "https://www.themoviedb.org/movie/70590/watch?locale=IN",
+        "logo": "/9YJY5OwsIPMoX3xC3TdtZVbKBpE.jpg"
+      },
+      {
+        "name": "Lionsgate Play Apple TV Channel",
+        "type": "Stream",
+        "link": "https://tv.apple.com/search?term=Singham",
+        "logo": "/p8i1zUcZYQ7qU6RrGvGbDItvcx4.jpg"
+      },
+      {
+        "name": "Lionsgate Play Amazon Channel",
+        "type": "Stream",
+        "link": "https://www.themoviedb.org/movie/70590/watch?locale=IN",
+        "logo": "/yVbjPWEbsStanRAxwKMDARVOvsn.jpg"
+      },
+      {
+        "name": "Amazon Prime Video with Ads",
+        "type": "Stream",
+        "link": "https://www.amazon.in/s?k=Singham&i=instant-video",
+        "logo": "/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
+      },
+      {
+        "name": "Google Play Movies",
+        "type": "Rent",
+        "link": "https://www.themoviedb.org/movie/70590/watch?locale=IN",
+        "logo": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg"
+      },
+      {
+        "name": "YouTube",
+        "type": "Rent",
+        "link": "https://www.youtube.com/results?search_query=Singham",
+        "logo": "/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg"
+      }
+    ],
+    "language": "HI",
+    "tags": [
+      "Action",
+      "India"
+    ],
+    "featured": false
+  },
+  {
+    "id": 37,
+    "title": "Krrish",
+    "slug": "krrish",
+    "year": 2006,
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Science Fiction"
+    ],
+    "rating": "6.5",
+    "duration": "2h 54m",
+    "poster": "/assets/images/posters/krrish.webp",
+    "trailer": "https://www.youtube.com/embed/3qa3L9rTEG0",
+    "description": "In Singapore, Krishna is forced by circumstances to use his superpowers and become a masked superhero named Krrish, before getting drawn towards his lost legacy.",
+    "platforms": [],
+    "providers": [],
+    "language": "HI",
+    "tags": [
+      "Action",
+      "India"
+    ],
+    "featured": false
+  },
+  {
+    "id": 38,
+    "title": "Wanted",
+    "slug": "wanted",
+    "year": 2008,
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Crime"
+    ],
+    "rating": "6.5",
+    "duration": "1h 50m",
+    "poster": "/assets/images/posters/wanted.webp",
+    "trailer": "https://www.youtube.com/embed/b9YEdjEKme0",
+    "description": "Doormat Wesley Gibson is an office worker whose life is going nowhere. He meets an attractive woman named Fox and discovers that his recently murdered father - whom Wesley never knew - belonged to the Fraternity, a secret society of assassins which takes its orders from Fate itself. Fox and Sloan, the Fraternity's leader, teach Wesley, through intense training, to tap into dormant powers and hone his innate killing skills. Though he enjoys his newfound abilities, he begins to suspect that there is more to the Fraternity than meets the eye.",
+    "platforms": [
+      "JioHotstar",
+      "Zee5"
+    ],
+    "providers": [
+      {
+        "name": "JioHotstar",
+        "type": "Stream",
+        "link": "https://www.hotstar.com/in/search?q=Wanted",
+        "logo": "/kVqjgpcwvDJOhCupjcLzwwtOp52.jpg"
+      },
+      {
+        "name": "Zee5",
+        "type": "Rent",
+        "link": "https://www.zee5.com/search?q=Wanted",
+        "logo": "/gP67NRy1ShUJilrzMsbOmEmdmcv.jpg"
+      },
+      {
+        "name": "Hungama Play",
+        "type": "Rent",
+        "link": "https://www.themoviedb.org/movie/8909-wanted/watch?locale=IN",
+        "logo": "/pMTVKAUyjMb0xdMnHqfNj73MGH6.jpg"
+      },
+      {
+        "name": "Amazon Video",
+        "type": "Rent",
+        "link": "https://www.themoviedb.org/movie/8909-wanted/watch?locale=IN",
+        "logo": "/qR6FKvnPBx2O37FDg8PNM7efwF3.jpg"
+      }
+    ],
+    "language": "EN",
+    "tags": [
+      "Action",
+      "India"
+    ],
+    "featured": false
+  },
+  {
+    "id": 39,
+    "title": "Rowdy Rathore",
+    "slug": "rowdy-rathore",
+    "year": 2012,
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Comedy",
+      "Crime"
+    ],
+    "rating": "5.9",
+    "duration": "2h 23m",
+    "poster": "/assets/images/posters/rowdy-rathore.webp",
+    "trailer": "https://www.youtube.com/embed/gCAcU3p9GNo",
+    "description": "A small-time thug comes across a young girl who claims him to be her father, following which he realizes he has a lookalike who's being hunted by goons.",
+    "platforms": [],
+    "providers": [],
+    "language": "HI",
+    "tags": [
+      "Action",
+      "India"
+    ],
+    "featured": false
+  },
+  {
+    "id": 40,
+    "title": "Dhoom",
+    "slug": "dhoom",
+    "year": 2004,
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "rating": "6.2",
+    "duration": "2h 9m",
+    "poster": "/assets/images/posters/dhoom.webp",
+    "trailer": "",
+    "description": "A gang of bikers headed by the cool-headed and arrogant Kabir is on a robbing spree in Mumbai.  ACP Jai Dixit is put in charge of the case and he recruits a bumbling bike mechanic and racer to help Jai nab them.",
+    "platforms": [
+      "Netflix",
+      "Apple TV Store"
+    ],
+    "providers": [
+      {
+        "name": "Netflix",
+        "type": "Stream",
+        "link": "https://www.netflix.com/search?q=Dhoom",
+        "logo": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+      },
+      {
+        "name": "Apple TV Store",
+        "type": "Rent",
+        "link": "https://tv.apple.com/search?term=Dhoom",
+        "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+      },
+      {
+        "name": "Google Play Movies",
+        "type": "Rent",
+        "link": "https://www.themoviedb.org/movie/17478/watch?locale=IN",
+        "logo": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg"
+      },
+      {
+        "name": "YouTube",
+        "type": "Rent",
+        "link": "https://www.youtube.com/results?search_query=Dhoom",
+        "logo": "/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg"
+      }
+    ],
+    "language": "HI",
+    "tags": [
+      "Action",
+      "India"
+    ],
+    "featured": false
+  },
+  {
+    "id": 41,
+    "title": "Ghajini",
+    "slug": "ghajini",
+    "year": 2008,
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Romance",
+      "Thriller"
+    ],
+    "rating": "7.0",
+    "duration": "3h 6m",
+    "poster": "/assets/images/posters/ghajini.webp",
+    "trailer": "https://www.youtube.com/embed/jEccwrX6AgQ",
+    "description": "A man suffering from anterograde amnesia as a result of a violent attack in the past sets out to avenge his girlfriend's death with the aid of photographs, notes and tattoos all over his body.",
+    "platforms": [
+      "Amazon Prime Video",
+      "Sun Nxt"
+    ],
+    "providers": [
+      {
+        "name": "Amazon Prime Video",
+        "type": "Stream",
+        "link": "https://www.amazon.in/s?k=Ghajini&i=instant-video",
+        "logo": "/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
+      },
+      {
+        "name": "Sun Nxt",
+        "type": "Stream",
+        "link": "https://www.themoviedb.org/movie/14070/watch?locale=IN",
+        "logo": "/6KEQzITx2RrCAQt5Nw9WrL1OI8z.jpg"
+      },
+      {
+        "name": "Amazon Prime Video with Ads",
+        "type": "Stream",
+        "link": "https://www.amazon.in/s?k=Ghajini&i=instant-video",
+        "logo": "/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
+      },
+      {
+        "name": "Apple TV Store",
+        "type": "Rent",
+        "link": "https://tv.apple.com/search?term=Ghajini",
+        "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+      }
+    ],
+    "language": "HI",
+    "tags": [
+      "Action",
+      "India"
+    ],
+    "featured": false
+  },
+  {
+    "id": 42,
+    "title": "The Wolf of Wall Street",
+    "slug": "the-wolf-of-wall-street",
+    "year": 2013,
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Comedy"
+    ],
+    "rating": "8.0",
+    "duration": "3h 0m",
+    "poster": "/assets/images/posters/the-wolf-of-wall-street.webp",
+    "trailer": "https://www.youtube.com/embed/Slj4-Sv-YNA",
+    "description": "A New York stockbroker refuses to cooperate in a large securities fraud case involving corruption on Wall Street, corporate banking world and mob infiltration. Based on Jordan Belfort's autobiography.",
+    "platforms": [
+      "Lionsgate Play",
+      "Apple TV Store"
+    ],
+    "providers": [
+      {
+        "name": "Lionsgate Play",
+        "type": "Stream",
+        "link": "https://www.themoviedb.org/movie/106646-the-wolf-of-wall-street/watch?locale=IN",
+        "logo": "/e2hCUg2Z3sJ6yWF9NLU24SIKeWa.jpg"
+      },
+      {
+        "name": "Apple TV Store",
+        "type": "Rent",
+        "link": "https://tv.apple.com/search?term=The%20Wolf%20of%20Wall%20Street",
+        "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+      },
+      {
+        "name": "Google Play Movies",
+        "type": "Rent",
+        "link": "https://www.themoviedb.org/movie/106646-the-wolf-of-wall-street/watch?locale=IN",
+        "logo": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg"
+      },
+      {
+        "name": "YouTube",
+        "type": "Rent",
+        "link": "https://www.youtube.com/results?search_query=The%20Wolf%20of%20Wall%20Street",
+        "logo": "/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg"
+      },
+      {
+        "name": "Amazon Video",
+        "type": "Rent",
+        "link": "https://www.themoviedb.org/movie/106646-the-wolf-of-wall-street/watch?locale=IN",
+        "logo": "/qR6FKvnPBx2O37FDg8PNM7efwF3.jpg"
+      }
+    ],
+    "language": "EN",
+    "tags": [
+      "Horror",
+      "India",
+      "Comedy"
+    ],
+    "featured": false
   }
 ]
