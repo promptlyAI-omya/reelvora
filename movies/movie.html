@@ -1,19 +1,28 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4KBYN42BCM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4KBYN42BCM');
+</script>
     <meta name="robots" content="index, follow">
 
-    <!-- SEO Meta — Dynamically set by JS -->
-    <title>Movie Details – Reelvora</title>
+    <!-- SEO Meta â€” Dynamically set by JS -->
+    <title>Movie Details â€“ Reelvora</title>
     <meta name="description" content="Watch trailers, read reviews, and find where to stream this movie.">
     <link rel="canonical" href="https://yourdomain.com/movies/movie.html">
 
-    <!-- Open Graph — Dynamically set by JS -->
+    <!-- Open Graph â€” Dynamically set by JS -->
     <meta property="og:type" content="video.movie">
-    <meta property="og:title" content="Movie Details – Reelvora">
+    <meta property="og:title" content="Movie Details â€“ Reelvora">
     <meta property="og:description" content="">
     <meta property="og:image" content="">
     <meta property="og:url" content="">
@@ -24,7 +33,7 @@
     <meta name="twitter:title" content="">
     <meta name="twitter:description" content="">
 
-    <!-- Schema.org Movie Markup — Injected by JS -->
+    <!-- Schema.org Movie Markup â€” Injected by JS -->
 
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/style.css">
@@ -37,7 +46,7 @@
 
 <body>
 
-    <!-- ═══════════════ LOADING SCREEN ═══════════════ -->
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• LOADING SCREEN â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
     <div class="loading-screen" id="loadingScreen">
         <div class="loader">
             <div class="loader-ring"></div>
@@ -45,11 +54,11 @@
         </div>
     </div>
 
-    <!-- ═══════════════ NAVIGATION ═══════════════ -->
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• NAVIGATION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
     <nav class="navbar" id="navbar">
         <div class="nav-content">
             <a href="/" class="nav-logo">
-                <span class="nav-logo-icon">🎬</span>
+                <span class="nav-logo-icon">ðŸŽ¬</span>
                 Reel<span class="logo-accent">vora</span>
             </a>
             <div class="nav-links" id="navLinks">
@@ -63,7 +72,7 @@
             </div>
             <div class="nav-search" id="navSearch">
                 <input type="text" placeholder="Search movies..." id="searchInput" aria-label="Search movies">
-                <button class="nav-search-btn" id="searchBtn" aria-label="Toggle search">🔍</button>
+                <button class="nav-search-btn" id="searchBtn" aria-label="Toggle search">ðŸ”</button>
             </div>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
                 <span></span><span></span><span></span>
@@ -76,7 +85,7 @@
         <div class="search-results-grid" id="searchResults"></div>
     </div>
 
-    <!-- ═══════════════ AD SLOT #1 — Native Banner (Top) ═══════════════ -->
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• AD SLOT #1 â€” Native Banner (Top) â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
     <div class="ad-slot ad-top" id="adTop" style="margin-top: calc(var(--nav-height) + 1rem);">
         <div class="native-ad">
             <script async="async" data-cfasync="false"
@@ -85,7 +94,7 @@
         </div>
     </div>
 
-    <!-- ═══════════════ MOVIE DETAIL ═══════════════ -->
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• MOVIE DETAIL â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
     <main class="movie-detail">
         <div class="container">
 
@@ -105,7 +114,7 @@
                     <div class="movie-badges-container"
                         style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; align-items: center;">
                         <div class="movie-rating-badge" id="movieRating" style="margin-bottom: 0;">
-                            ⭐ <span id="ratingValue">—</span> / 10
+                            â­ <span id="ratingValue">â€”</span> / 10
                         </div>
                         <div class="movie-genre-badge" id="heroGenreBadge"
                             style="display: none; background: rgba(138, 43, 226, 0.2); color: #b366ff; padding: 0.4rem 0.8rem; border-radius: 4px; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px; border: 1px solid rgba(138, 43, 226, 0.3);">
@@ -121,23 +130,23 @@
                     <div class="movie-info-grid" id="movieInfoGrid">
                         <div class="movie-info-item">
                             <label>Year</label>
-                            <span id="movieYear">—</span>
+                            <span id="movieYear">â€”</span>
                         </div>
                         <div class="movie-info-item">
                             <label>Genre</label>
-                            <span id="movieGenre">—</span>
+                            <span id="movieGenre">â€”</span>
                         </div>
                         <div class="movie-info-item">
                             <label>Language</label>
-                            <span id="movieLanguage">—</span>
+                            <span id="movieLanguage">â€”</span>
                         </div>
                         <div class="movie-info-item">
                             <label>Duration</label>
-                            <span id="movieDuration">—</span>
+                            <span id="movieDuration">â€”</span>
                         </div>
                         <div class="movie-info-item">
                             <label>IMDb Rating</label>
-                            <span id="movieImdb">—</span>
+                            <span id="movieImdb">â€”</span>
                         </div>
                     </div>
 
@@ -148,7 +157,7 @@
                 </div>
             </div>
 
-            <!-- ═══════════════ AD SLOT #2 — In-Content ═══════════════ -->
+            <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• AD SLOT #2 â€” In-Content â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
             <!-- Insert in-content ad script here -->
             <div class="ad-slot ad-mid" id="adMid">
                 <span class="ad-slot-label">Advertisement</span>
@@ -161,7 +170,7 @@
                 </div>
             </div>
 
-            <!-- ═══════════════ TRAILER SECTION ═══════════════ -->
+            <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• TRAILER SECTION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
             <section class="trailer-section" id="trailerSection">
                 <h2 class="section-title">Watch Trailer</h2>
                 <div class="trailer-wrapper" id="trailerWrapper">
@@ -169,7 +178,7 @@
                 </div>
             </section>
 
-            <!-- ═══════════════ AD SLOT #3 — In-Article ═══════════════ -->
+            <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• AD SLOT #3 â€” In-Article â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
             <!-- Insert in-article ad script here -->
             <div class="ad-slot ad-in-article" id="adInArticle">
                 <span class="ad-slot-label">Advertisement</span>
@@ -182,7 +191,7 @@
                 </div>
             </div>
 
-            <!-- ═══════════════ WHERE TO WATCH ═══════════════ -->
+            <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• WHERE TO WATCH â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
             <section class="platforms-section" id="platformsSection">
                 <h2 class="section-title">Where to Watch</h2>
                 <div class="platforms-grid" id="platformsGrid">
@@ -190,7 +199,7 @@
                 </div>
             </section>
 
-            <!-- ═══════════════ RELATED MOVIES ═══════════════ -->
+            <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• RELATED MOVIES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
             <section class="related-section" id="relatedSection">
                 <div class="section-header">
                     <h2 class="section-title">You Might Also Like</h2>
@@ -200,7 +209,7 @@
                 </div>
             </section>
 
-            <!-- ═══════════════ AD SLOT #4 — Native ═══════════════ -->
+            <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• AD SLOT #4 â€” Native â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
             <!-- Insert native ad script here -->
             <div class="ad-slot ad-native" id="adNative">
                 <span class="ad-slot-label">Sponsored Content</span>
@@ -209,12 +218,12 @@
         </div>
     </main>
 
-    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• FOOTER â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <div class="footer-logo">🎬 Reel<span class="logo-accent">vora</span></div>
+                    <div class="footer-logo">ðŸŽ¬ Reel<span class="logo-accent">vora</span></div>
                     <p>Your ultimate destination for discovering movies. Explore trending films, watch trailers, and
                         find where to stream your favorites.</p>
                 </div>
@@ -239,14 +248,14 @@
             </div>
             <div class="footer-bottom">
                 <span>&copy; 2026 Reelvora. All rights reserved.</span>
-                <span>Built with 🎬 for movie lovers</span>
+                <span>Built with ðŸŽ¬ for movie lovers</span>
                 <span style="display:block; font-size: 0.8em; margin-top: 0.5rem; color: #888;">This product uses the
                     TMDB API but is not endorsed or certified by TMDB.</span>
             </div>
         </div>
     </footer>
 
-    <!-- ═══════════════ STICKY FOOTER AD — 320x50 Banner ═══════════════ -->
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• STICKY FOOTER AD â€” 320x50 Banner â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
     <div class="sticky-footer-ad">
         <script>
             atOptions = {
@@ -260,13 +269,13 @@
         <script src="https://www.highperformanceformat.com/d4a176b1a9c115fdc04f211d69080bdb/invoke.js"></script>
     </div>
 
-    <!-- ═══════════════ AD SLOT #6 — Pop Script Placeholder ═══════════════ -->
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• AD SLOT #6 â€” Pop Script Placeholder â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
     <!-- Insert pop-under/interstitial ad script here -->
     <div class="pop-script-placeholder" id="popScriptPlaceholder">
         <!-- Your pop script goes here -->
     </div>
 
-    <!-- ═══════════════ SCRIPTS ═══════════════ -->
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• SCRIPTS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
     <script src="/assets/js/movie-detail.js" defer></script>
 
     <!-- Popunder Ad Script -->
@@ -274,3 +283,4 @@
 </body>
 
 </html>
+

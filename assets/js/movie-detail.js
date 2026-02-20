@@ -380,15 +380,17 @@
 
     function updateSEOMeta() {
         const m = currentMovie;
-        document.title = `${m.title} (${m.year}) – Watch & Streaming Info | Reelvora`;
+        document.title = `${m.title} (${m.year}) | Watch on OTT | Reelvora`;
 
-        setMeta('description', m.description.substring(0, 155));
-        setMeta('og:title', `${m.title} (${m.year}) – Reelvora`);
-        setMeta('og:description', m.description.substring(0, 200));
+        const desc = `${m.description.substring(0, 100)}... Watch ${m.title} on OTT platforms. IMDb Rating: ${m.rating}/10.`;
+        setMeta('description', desc);
+        setMeta('og:title', `${m.title} (${m.year}) | Watch on OTT | Reelvora`);
+        setMeta('og:description', desc);
         setMeta('og:image', m.poster);
         setMeta('og:url', window.location.href);
-        setMeta('twitter:title', `${m.title} (${m.year}) – Reelvora`);
-        setMeta('twitter:description', m.description.substring(0, 200));
+        setMeta('twitter:title', `${m.title} (${m.year}) | Watch on OTT | Reelvora`);
+        setMeta('twitter:description', desc);
+        setMeta('twitter:card', 'summary_large_image');
 
         // Update canonical
         const canonical = document.querySelector('link[rel="canonical"]');

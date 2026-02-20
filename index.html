@@ -1,35 +1,44 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4KBYN42BCM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4KBYN42BCM');
+</script>
   <meta name="robots" content="index, follow">
   <!-- Monetag Verification -->
   <meta name="monetag" content="17449d5bb55fa4bc913e6511e3f999c2">
 
   <!-- SEO Meta -->
-  <title>Reelvora – Discover Trending Movies & Where to Watch</title>
+  <title>Reelvora - Discover Trending Movies & OTT Platforms</title>
   <meta name="description"
-    content="Reelvora helps you discover trending movies, official trailers, ratings, and where to watch legally on OTT platforms.">
+    content="Reelvora - Discover trending movies, OTT availability, trailers, ratings and streaming platforms in one place.">
   <meta name="keywords"
     content="movies, films, streaming, movie reviews, trending movies, new releases 2026, where to watch, OTT">
   <link rel="canonical" href="https://yourdomain.com/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Reelvora – Discover Trending Movies & Where to Watch">
+  <meta property="og:title" content="Reelvora - Discover Trending Movies & OTT Platforms">
   <meta property="og:description"
-    content="Reelvora helps you discover trending movies, official trailers, ratings, and where to watch legally on OTT platforms.">
-  <meta property="og:image" content="https://yourdomain.com/assets/images/og-cover.webp">
+    content="Explore trending movies, IMDb ratings, OTT availability and official trailers.">
+  <meta property="og:image" content="default-share-image.jpg">
   <meta property="og:url" content="https://yourdomain.com/">
   <meta property="og:site_name" content="Reelvora">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Reelvora – Discover Trending Movies & Where to Watch">
+  <meta name="twitter:title" content="Reelvora - Discover Trending Movies & OTT Platforms">
   <meta name="twitter:description"
-    content="Reelvora helps you discover trending movies, official trailers, ratings, and where to watch legally on OTT platforms.">
+    content="Explore trending movies, IMDb ratings, OTT availability and official trailers.">
 
   <!-- Schema.org WebSite Markup -->
   <script type="application/ld+json">
@@ -60,7 +69,7 @@
 
 <body>
 
-  <!-- ═══════════════ LOADING SCREEN ═══════════════ -->
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• LOADING SCREEN â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
   <div class="loading-screen" id="loadingScreen">
     <div class="loader">
       <div class="loader-ring"></div>
@@ -68,11 +77,11 @@
     </div>
   </div>
 
-  <!-- ═══════════════ NAVIGATION ═══════════════ -->
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• NAVIGATION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
   <nav class="navbar" id="navbar">
     <div class="nav-content">
       <a href="/" class="nav-logo">
-        <span class="nav-logo-icon">🎬</span>
+        <span class="nav-logo-icon">ðŸŽ¬</span>
         Reel<span class="logo-accent">vora</span>
       </a>
 
@@ -88,7 +97,7 @@
 
       <div class="nav-search" id="navSearch">
         <input type="text" placeholder="Search movies..." id="searchInput" aria-label="Search movies">
-        <button class="nav-search-btn" id="searchBtn" aria-label="Toggle search">🔍</button>
+        <button class="nav-search-btn" id="searchBtn" aria-label="Toggle search">ðŸ”</button>
       </div>
 
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
@@ -99,12 +108,12 @@
     </div>
   </nav>
 
-  <!-- ═══════════════ SEARCH RESULTS OVERLAY ═══════════════ -->
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• SEARCH RESULTS OVERLAY â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
   <div class="search-overlay" id="searchOverlay">
     <div class="search-results-grid" id="searchResults"></div>
   </div>
 
-  <!-- ═══════════════ HERO SECTION ═══════════════ -->
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• HERO SECTION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
   <section class="hero" id="heroSection">
     <div class="hero-bg">
       <img src="" alt="Featured movie backdrop" id="heroBgImage" loading="eager">
@@ -112,12 +121,12 @@
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <div class="hero-info">
-        <div class="hero-badge">🔥 Trending Now</div>
+        <div class="hero-badge">ðŸ”¥ Trending Now</div>
         <h1 class="hero-title" id="heroTitle">Loading...</h1>
         <div class="hero-meta" id="heroMeta"></div>
         <p class="hero-description" id="heroDescription"></p>
         <div class="hero-actions">
-          <a href="#" class="btn btn-primary" id="heroWatchBtn">▶ Watch Trailer</a>
+          <a href="#" class="btn btn-primary" id="heroWatchBtn">â–¶ Watch Trailer</a>
           <a href="#" class="btn btn-secondary" id="heroDetailBtn">More Info</a>
         </div>
       </div>
@@ -134,7 +143,7 @@
     </div>
   </section>
 
-  <!-- ═══════════════ AD SLOT #1 — Native Banner (Below Hero) ═══════════════ -->
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• AD SLOT #1 â€” Native Banner (Below Hero) â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
   <div class="ad-slot ad-top" id="adTop">
     <div class="native-ad">
       <script async="async" data-cfasync="false"
@@ -143,7 +152,7 @@
     </div>
   </div>
 
-  <!-- ═══════════════ MOVIE GRID SECTION ═══════════════ -->
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• MOVIE GRID SECTION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
   <section class="section" id="movieSection">
     <div class="container">
       <div class="section-header">
@@ -158,10 +167,10 @@
     </div>
   </section>
 
-  <!-- ═══════════════ AD SLOT #2 — After First 6 Movies ═══════════════ -->
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• AD SLOT #2 â€” After First 6 Movies â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
   <!-- This ad is injected dynamically between movie cards by JavaScript -->
 
-  <!-- ═══════════════ GENRE SECTION ═══════════════ -->
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• GENRE SECTION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
   <section class="section" id="genreSection">
     <div class="container">
       <div class="section-header">
@@ -173,7 +182,7 @@
     </div>
   </section>
 
-  <!-- ═══════════════ FEATURED GUIDES ═══════════════ -->
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• FEATURED GUIDES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
   <section class="section featured-guides" id="guidesSection">
     <div class="container">
       <div class="section-header">
@@ -185,7 +194,7 @@
     </div>
   </section>
 
-  <!-- ═══════════════ TELEGRAM SPONSOR SLOT ═══════════════ -->
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• TELEGRAM SPONSOR SLOT â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
   <div class="container">
     <div class="telegram-banner" style="margin-bottom: 0;">
       <div class="telegram-icon">
@@ -204,12 +213,12 @@
     </div>
   </div>
 
-  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• FOOTER â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
         <div class="footer-brand">
-          <div class="footer-logo">🎬 Reel<span class="logo-accent">vora</span></div>
+          <div class="footer-logo">ðŸŽ¬ Reel<span class="logo-accent">vora</span></div>
           <p>Your ultimate destination for discovering movies. Explore trending films, watch trailers, and find where to
             stream your favorites.</p>
         </div>
@@ -237,14 +246,14 @@
       </div>
       <div class="footer-bottom">
         <span>&copy; 2026 Reelvora. All rights reserved.</span>
-        <span>Built with 🎬 for movie lovers</span>
+        <span>Built with ðŸŽ¬ for movie lovers</span>
         <span style="display:block; font-size: 0.8em; margin-top: 0.5rem; color: #888;">This product uses the TMDB API
           but is not endorsed or certified by TMDB.</span>
       </div>
     </div>
   </footer>
 
-  <!-- ═══════════════ STICKY FOOTER AD — 320x50 Banner ═══════════════ -->
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• STICKY FOOTER AD â€” 320x50 Banner â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
   <div class="sticky-footer-ad">
     <script>
       atOptions = {
@@ -258,7 +267,7 @@
     <script src="https://www.highperformanceformat.com/d4a176b1a9c115fdc04f211d69080bdb/invoke.js"></script>
   </div>
 
-  <!-- ═══════════════ SCRIPTS ═══════════════ -->
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• SCRIPTS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
   <script src="/assets/js/app.js" defer></script>
 
   <!-- Popunder Ad Script -->
@@ -266,3 +275,5 @@
 </body>
 
 </html>
+
+

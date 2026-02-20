@@ -90,6 +90,14 @@
         window.history.pushState({ path: newURL }, '', newURL);
 
         updatePageMeta();
+
+        // GA4 SPA Tracking
+        if (typeof gtag === 'function') {
+            gtag('event', 'page_view', {
+                page_path: newURL,
+                page_title: document.title
+            });
+        }
     }
 
     function applyFilters() {
@@ -451,13 +459,31 @@
         if (state.languages.length > 0) titleParts.push(`in ${state.languages.join(', ')}`);
         if (state.platforms.length > 0) titleParts.push(`on ${state.platforms.join(', ')}`);
 
-        const pageTitle = `${titleParts.join(' ')} | Reelvora`;
+        // Target format: [Category] Movies | Trending [Category] Films & OTT Platforms | Reelvora
+        let categoryName = state.genres.length > 0 ? state.genres.join('/') : 'Movies';
+        let pageTitle = `${categoryName} Movies | Trending ${categoryName} Films & OTT Platforms | Reelvora`;
+
+        // Add specific modifiers for custom filters
+        let combinedParts = titleParts.join(' ');
+        if (state.languages.length > 0 || state.platforms.length > 0) {
+            pageTitle = `${categoryName} Movies ${combinedParts.replace(categoryName, '')} | Trending Films & OTT Platforms | Reelvora`;
+        }
+
         document.title = pageTitle;
 
-        const metaDesc = $(`meta[name="description"]`);
-        if (metaDesc) {
-            metaDesc.content = `Browse ${pageTitle}. Discover top files, watch trailers, and find where to stream on Reelvora.`;
-        }
+        const desc = `Discover the best trending ${combinedParts}. Explore IMDb ratings, watch trailers, and find where to stream on Reelvora.`;
+        setMeta('description', desc);
+        setMeta('og:title', pageTitle);
+        setMeta('og:description', desc);
+        setMeta('og:url', window.location.href);
+        setMeta('twitter:title', pageTitle);
+        setMeta('twitter:description', desc);
+    }
+
+    function setMeta(name, content) {
+        let meta = document.querySelector(`meta[property="${name}"]`) ||
+            document.querySelector(`meta[name="${name}"]`);
+        if (meta) meta.content = content;
     }
 
     function getReadableLanguage(code) {
